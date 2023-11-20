@@ -7,6 +7,13 @@ module.exports = async (client, interaction, args) => {
     const winnerCount = interaction.options.getNumber('winners');
     const prize = interaction.options.getString('prize');
 
+    if (!Number.isInteger(winnerCount) || winnerCount <= 0) {
+        return client.errNormal({
+            error: "The winner count must be greater then 0!",
+            type: 'editreply'
+        }, interaction);
+    }    
+    
     client.giveawaysManager.start(gchannel, {
         duration: ms(duration),
         prize: `${client.emotes.normal.gift} - ${prize}`,

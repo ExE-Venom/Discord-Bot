@@ -15,7 +15,7 @@ module.exports = async (client, interaction, args) => {
         if (data) {
             const channel = interaction.member.guild.channels.cache.get(data.Channel);
             if (!channel) return  client.errNormal({
-                error: `No review channel set! Do \`reviewchannel\``,
+                error: `No review channel set! Do | reviewchannel |`,
                 type: 'editreply'
             }, interaction);
             
@@ -61,7 +61,7 @@ module.exports = async (client, interaction, args) => {
         }
         else {
             client.errNormal({
-                error: `No review channel set! Do \`reviewchannel\``,
+                error: `No review channel set! Do | reviewchannel |`,
                 type: 'editreply'
             }, interaction)
         }

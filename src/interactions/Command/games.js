@@ -62,16 +62,6 @@ module.exports = {
             subcommand
                 .setName('trivia')
                 .setDescription('Play Trivia'),
-        )
-        .addSubcommand(subcommand =>
-            subcommand
-                .setName('willyoupressthebutton')
-                .setDescription('Play Will You Press The Button'),
-        )
-        .addSubcommand(subcommand =>
-            subcommand
-                .setName('wouldyourather')
-                .setDescription('Play Would You Rather'),
         ),
 
     /** 

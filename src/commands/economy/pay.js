@@ -32,7 +32,7 @@ module.exports = async (client, interaction, args) => {
                 fields: [
                     {
                         name: `👤┆User`,
-                        value: `$${user}`,
+                        value: `${user}`,
                         inline: true
                     },
                     {

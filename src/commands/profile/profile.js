@@ -20,7 +20,8 @@ module.exports = async (client, interaction, args) => {
         DESIGNER: client.emotes.badges.designer + ' - Designer',
         MARKETING: client.emotes.badges.marketing + ' - Marketing',
         ACTIVE: client.emotes.badges.active + ' - Active',
-        VIP: client.emotes.badges.vip + ' - VIP'
+        VIP: client.emotes.badges.vip + ' - VIP',
+        TESTER: client.emotes.badges.tester + ' - Tester'
     }
 
     const flags = {
@@ -112,26 +113,6 @@ module.exports = async (client, interaction, args) => {
                     inline: true
                 },
                 {
-                    name: "🎶┆Favorite songs",
-                    value: `${data.Songs.join(', ') || 'Not set'}`,
-                    inline: true
-                },
-                {
-                    name: "🎤┆Favorite artists",
-                    value: `${data.Artists.join(', ') || 'Not set'}`,
-                    inline: true
-                },
-                {
-                    name: "🎬┆Favorite movies",
-                    value: `${data.Movies.join(', ') || 'Not set'}`,
-                    inline: true
-                },
-                {
-                    name: "👨‍🎤┆Favorite actors",
-                    value: `${data.Actors.join(', ') || 'Not set'}`,
-                    inline: true
-                },
-                {
                     name: "🏴┆Origin",
                     value: `${data.Orgin || 'Not set'}`,
                     inline: true
@@ -147,19 +128,19 @@ module.exports = async (client, interaction, args) => {
                     inline: true
                 },
                 {
-                    name: "📛┆Bot Badges",
-                    value: `${Badges.FLAGS ? Badges.FLAGS.map(flag => badgeFlags[flag]).join('\n') : 'None'}`,
-                    inline: true
-                },
-                {
                     name: "🏷️┆Discord Badges",
                     value: `${userFlags.length ? userFlags.map(flag => flags[flag]).join(', ') : 'None' || 'None'}`,
                     inline: true
                 },
                 {
+                    name: "📛┆Bot Badges",
+                    value: `${Badges.FLAGS ? Badges.FLAGS.map(flag => badgeFlags[flag]).join('\n') : 'None'}`,
+                    inline: false
+                },                         
+                {
                     name: "💳┆Dcredits",
                     value: `${credits || 'None'}`,
-                    inline: true
+                    inline: false
                 },
                 {
                     name: "ℹ️┆About me",

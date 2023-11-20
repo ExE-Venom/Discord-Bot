@@ -45,9 +45,6 @@ module.exports = async (client, interaction, args) => {
                     type: 'editreply'
                 }, interaction);
             }
-            else {
-                client.errNormal({ error: `This user doesn't have any money!`, type: 'editreply' }, interaction);
-            }
         }, 500)
     })
 }

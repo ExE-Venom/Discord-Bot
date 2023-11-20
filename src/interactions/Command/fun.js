@@ -20,11 +20,6 @@ module.exports = {
                 .setDescription('See all the fun meme commands in Bot')
                 .addSubcommand(subcommand =>
                     subcommand
-                        .setName('confused')
-                        .setDescription('React with a Confused Nick Young meme')
-                )
-                .addSubcommand(subcommand =>
-                    subcommand
                         .setName('cleverrate')
                         .setDescription('See how much clever you are')
                 )

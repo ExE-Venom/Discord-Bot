@@ -7,7 +7,7 @@ module.exports = async (client, interaction, args) => {
     const user = interaction.options.getUser('user') || interaction.user;
 
     if (user.bot) return client.errNormal({
-        error: "You cannot see the balance of a bot!",
+        error: "You can't see the bot's balance!",
         type: 'editreply'
     }, interaction);
 
@@ -35,13 +35,32 @@ module.exports = async (client, interaction, args) => {
                         inline: true
                     }
                 ],
-                desc: `The current balance of \`${user.tag}\``,
+                desc: `The current balance of ${user}`,
                 type: 'editreply'
             }, interaction);
         }
         else {
-            client.errNormal({
-                error: `The user doesn't have any money!`, type: 'editreply'
+            client.embed({
+                title: `${client.emotes.economy.coins}・Balance`,
+                fields: [
+                    {
+                        name: `${client.emotes.economy.pocket}┆Wallet`,
+                        value: `$0`,
+                        inline: true
+                    },
+                    {
+                        name: `${client.emotes.economy.bank}┆Bank`,
+                        value: `$0`,
+                        inline: true
+                    },
+                    {
+                        name: `💰┆Total`,
+                        value: `$0`,
+                        inline: true
+                    }
+                ],
+                desc: `The current balance of ${user}`,
+                type: 'editreply'
             }, interaction);
         }
     })

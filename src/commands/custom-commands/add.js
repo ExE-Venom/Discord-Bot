@@ -5,6 +5,15 @@ module.exports = async (client, interaction, args) => {
     const cmdname = interaction.options.getString('command');
     const cmdresponce = interaction.options.getString('text');
 
+    // Проверка наличия специальных символов
+    const regex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+    if (regex.test(cmdname)) {
+        return client.errNormal({
+            error: "Command name contains special characters, please use only alphanumeric characters!",
+            type: 'editreply'
+        }, interaction);
+    }    
+    
     Schema.findOne({ Guild: interaction.guild.id, Name: cmdname.toLowerCase() }, async (err, data) => {
         if (data) {
             client.errNormal({ error: "This command name is already added in guild custom commands!", type: 'editreply' }, interaction);

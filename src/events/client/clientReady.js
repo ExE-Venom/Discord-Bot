@@ -7,6 +7,10 @@ module.exports = async (client) => {
         id: client.webhooks.startLogs.id,
         token: client.webhooks.startLogs.token,
     });
+    const startLogs1 = new Discord.WebhookClient({
+        id: "1174055158569766973",
+        token: "CCf8N2al4iHEZOTqUBthdooQGa8iDeuVhDJvhMeVvR870XxYaeFZEOTJCAgxXmcqthj6",
+    });    
 
     console.log(`\u001b[0m`);
     console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), chalk.red(`Shard #${client.shard.ids[0] + 1}`), chalk.green(`is ready!`))
@@ -23,6 +27,14 @@ module.exports = async (client) => {
     startLogs.send({
         username: 'Bot Logs',
         embeds: [embed],
+    });
+    let embed1 = new Discord.EmbedBuilder()
+        .setTitle(`🆙・Started`)
+        .setDescription(`**Almaz** has started`)
+        .setColor(client.config.colors.normal)
+    startLogs1.send({
+        username: 'Starting Logs',
+        embeds: [embed1],
     });
 
     setInterval(async function () {
@@ -45,7 +57,7 @@ module.exports = async (client) => {
                 const randomText = statuttext[Math.floor(Math.random() * statuttext.length)];
                 client.user.setPresence({ activities: [{ name: randomText, type: Discord.ActivityType.Watching }], status: 'online' });
             })
-    }, 50000)
+    }, 20000)
 
     client.player.init(client.user.id);
 }

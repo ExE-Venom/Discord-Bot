@@ -4,7 +4,7 @@ module.exports = async (client, interaction, args) => {
     let row = new Discord.ActionRowBuilder()
         .addComponents(
             new Discord.ButtonBuilder()
-                .setLabel("Discord Server")
+                .setLabel("Discord Server (rus)")
                 .setURL("https://discord.gg/9DUP4JRd9w")
                 .setStyle(Discord.ButtonStyle.Link),
         );
@@ -29,7 +29,7 @@ module.exports = async (client, interaction, args) => {
             inline: true,
         },
         {
-            name: "🌐┆Discord Server",
+            name: "🌐┆Discord Server (rus)",
             value: `**https://discord.gg/9DUP4JRd9w**`,
             inline: true,
         }],

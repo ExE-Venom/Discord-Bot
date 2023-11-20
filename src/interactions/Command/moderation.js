@@ -27,12 +27,6 @@ module.exports = {
         )
         .addSubcommand(subcommand =>
             subcommand
-                .setName('clearuser')
-                .setDescription('Clear user messages in a channel')
-                .addUserOption(option => option.setName('user').setDescription('Select a user').setRequired(true))
-        )
-        .addSubcommand(subcommand =>
-            subcommand
                 .setName('demote')
                 .setDescription('Demote a user')
                 .addUserOption(option => option.setName('user').setDescription('Select a user').setRequired(true))

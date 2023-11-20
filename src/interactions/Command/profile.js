@@ -46,41 +46,6 @@ module.exports = {
                 .setName('bday')
                 .setDescription('Set your bday')
                 .addStringOption(option => option.setName('bday').setDescription('Enter a bday').setRequired(true))
-        )
-
-        .addSubcommandGroup((group) =>
-            group
-                .setName('actor')
-                .setDescription('Set your favorite actor')
-                .addSubcommand((subcommand) =>
-                    subcommand
-                        .setName('addactor')
-                        .setDescription('The actor you want to add')
-                        .addStringOption(option => option.setName('actor').setDescription('The actor you want to add').setRequired(true)),
-                )
-                .addSubcommand((subcommand) =>
-                    subcommand
-                        .setName('delactor')
-                        .setDescription("The actor you want te remove")
-                        .addStringOption(option => option.setName('actor').setDescription('The actor you want to remove').setRequired(true)),
-                )
-        ).
-        addSubcommandGroup((group) =>
-            group
-                .setName('artist')
-                .setDescription('Set your favorite artist')
-                .addSubcommand((subcommand) =>
-                    subcommand
-                        .setName('addartist')
-                        .setDescription('The artist you want to add')
-                        .addStringOption(option => option.setName('artist').setDescription('The artist you want to add').setRequired(true)),
-                )
-                .addSubcommand((subcommand) =>
-                    subcommand
-                        .setName('delartist')
-                        .setDescription("The artist you want te remove")
-                        .addStringOption(option => option.setName('artist').setDescription('The artist you want to remove').setRequired(true)),
-                )
         ).
         addSubcommand(subcommand =>
             subcommand
@@ -106,22 +71,6 @@ module.exports = {
                 )
         ).addSubcommandGroup((group) =>
             group
-                .setName('movie')
-                .setDescription('Set your favorite movie')
-                .addSubcommand((subcommand) =>
-                    subcommand
-                        .setName('addmovie')
-                        .setDescription('The movie you want to add')
-                        .addStringOption(option => option.setName('movie').setDescription('The movie you want to add').setRequired(true)),
-                )
-                .addSubcommand((subcommand) =>
-                    subcommand
-                        .setName('delmovie')
-                        .setDescription("The movie you want te remove")
-                        .addStringOption(option => option.setName('movie').setDescription('The movie you want to remove').setRequired(true)),
-                )
-        ).addSubcommandGroup((group) =>
-            group
                 .setName('pet')
                 .setDescription('Set your favorite pet')
                 .addSubcommand((subcommand) =>
@@ -135,22 +84,6 @@ module.exports = {
                         .setName('delpet')
                         .setDescription("The pet you want te remove")
                         .addStringOption(option => option.setName('pet').setDescription('The pet you want to remove').setRequired(true)),
-                )
-        ).addSubcommandGroup((group) =>
-            group
-                .setName('song')
-                .setDescription('Set your favorite song')
-                .addSubcommand((subcommand) =>
-                    subcommand
-                        .setName('addsong')
-                        .setDescription('The song you want to add')
-                        .addStringOption(option => option.setName('song').setDescription('The song you want to add').setRequired(true)),
-                )
-                .addSubcommand((subcommand) =>
-                    subcommand
-                        .setName('delsong')
-                        .setDescription("The song you want te remove")
-                        .addStringOption(option => option.setName('song').setDescription('The song you want to remove').setRequired(true)),
                 )
         ).
         addSubcommand(subcommand =>

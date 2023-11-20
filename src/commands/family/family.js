@@ -18,11 +18,11 @@ module.exports = async (client, interaction, args) => {
             },
             {
                 name: `Parent`,
-                value: `${data && data.Parent.length > 0 ? `${data.Parent.join(", ")}` : `This user has no parents`}`
+                value: `${data && data.Parent > 0 ? `${data.Parent.join(", ")}` : `This user has no parents`}`
             },
             {
                 name: `Children`,
-                value: `${data && data.Children.length > 0 ? `${data.Children.join(", ")}` : `This user has no children`}`
+                value: `${data && data.Children > 0 ? `${data.Children.join(", ")}` : `This user has no children`}`
             }
         ],
         type: 'editreply'

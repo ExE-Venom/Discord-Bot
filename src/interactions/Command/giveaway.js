@@ -45,12 +45,6 @@ module.exports = {
         )
         .addSubcommand(subcommand =>
             subcommand
-                .setName('edit')
-                .setDescription('Edit the time of a giveaway')
-                .addStringOption(option => option.setName('message').setDescription('Giveaway message ID').setRequired(true)),
-        )
-        .addSubcommand(subcommand =>
-            subcommand
                 .setName('delete')
                 .setDescription('Delete a giveaway')
                 .addStringOption(option => option.setName('message').setDescription('Giveaway message ID').setRequired(true)),

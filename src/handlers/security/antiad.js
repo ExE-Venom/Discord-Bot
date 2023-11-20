@@ -46,8 +46,13 @@ module.exports = (client) => {
                 }
                 else if (data.AntiLinks == true) {
                     const { content } = message
-
-                    if (content.includes('http://') || content.includes('https://') || content.includes('www.')) {
+                    
+                    const code3 = content.split('https://')[1];
+                    const code4 = content.split('http://')[1];
+                    const code5 = content.split('www.')[1];
+                    const hasLink = /(http:\/\/|https:\/\/|www\.)\S+/i.test(content);
+                    
+                    if (hasLink) {
                         Schema2.findOne({ Guild: message.guild.id }, async (err, data2) => {
                             if (data2) {
                                 if (data2.Channels.includes(message.channel.id) || message.member.permissions.has(Discord.PermissionsBitField.Flags.ManageMessages)) {

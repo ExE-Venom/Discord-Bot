@@ -31,7 +31,7 @@ module.exports = async (client, interaction, args) => {
 
     client.embed({
         title: `🛒・${interaction.guild.name}'s Store`,
-        desc: `Choose a item from the menu to buy`,
+        desc: `Choose a item from the menu to buy.\nTo see the price of all items, write \`/economy store\``,
         components: [select],
         type: 'editreply'
     }, interaction)

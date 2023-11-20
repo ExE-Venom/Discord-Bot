@@ -22,7 +22,7 @@ module.exports = {
             subcommand
                 .setName('edit')
                 .setDescription('Edit an announcement')
-                .addStringOption(option => option.setName('id').setDescription('ID of the announcement you want to change').setRequired(true))
+                .addStringOption(option => option.setName('id').setDescription('ID of the announcement(message) you want to change').setRequired(true))
                 .addStringOption(option => option.setName('message').setDescription('Your announcement message').setRequired(true)),
         )
     ,

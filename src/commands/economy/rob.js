@@ -10,7 +10,7 @@ module.exports = async (client, interaction, args) => {
     if (!user) return client.errUsage({ usage: "rob [mention user]", type: 'editreply' }, interaction);
 
     if (user.bot) return client.errNormal({
-        error: "You rob a bot!",
+        error: "You can't rob a bot!",
         type: 'editreply'
     }, interaction);
 
@@ -80,7 +80,7 @@ module.exports = async (client, interaction, args) => {
                                 }, interaction);
                             }
                             else {
-                                return client.errNormal({ error: `${user.username} does not have anything you can rob!`, type: 'editreply' }, interaction);
+                                return client.errNormal({ error: `${user} does not have anything you can rob!`, type: 'editreply' }, interaction);
                             }
                         })
                     }

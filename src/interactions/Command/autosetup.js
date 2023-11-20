@@ -28,23 +28,6 @@ module.exports = {
         )
         .addSubcommand(subcommand =>
             subcommand
-                .setName('fun')
-                .setDescription('Set the fun channels from the server')
-                .addStringOption(option =>
-                    option.setName('setup')
-                        .setDescription('The setup that you want')
-                        .setRequired(true)
-                        .addChoices(
-                            { name: 'Birthdays', value: 'birthdays' },
-                            { name: 'Chatbot', value: 'chatbot' },
-                            { name: 'Reviews', value: 'reviews' },
-                            { name: 'Suggestions', value: 'suggestions' },
-                            { name: 'Starboard', value: 'starboard' }
-                        )
-                )
-        )
-        .addSubcommand(subcommand =>
-            subcommand
                 .setName('games')
                 .setDescription('Set the game channels from the server')
                 .addStringOption(option =>

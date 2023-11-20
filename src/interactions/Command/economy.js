@@ -68,7 +68,7 @@ module.exports = {
             subcommand
                 .setName('deposit')
                 .setDescription('Deposit money to the bank')
-                .addNumberOption(option => option.setName('amount').setDescription('Enter a amount').setRequired(true))
+                .addNumberOption(option => option.setName('amount').setDescription('Enter a amount').setRequired(false))
         )
         .addSubcommand(subcommand =>
             subcommand
@@ -129,7 +129,7 @@ module.exports = {
             subcommand
                 .setName('withdraw')
                 .setDescription('Withdraw your money')
-                .addNumberOption(option => option.setName('amount').setDescription('Enter a amount').setRequired(true))
+                .addNumberOption(option => option.setName('amount').setDescription('Enter a amount').setRequired(false))
         )
         .addSubcommand(subcommand =>
             subcommand

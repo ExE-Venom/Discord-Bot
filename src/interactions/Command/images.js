@@ -264,10 +264,6 @@ module.exports = {
                         .setName('triggered')
                         .setDescription('Trigger yourself'),
                 )
-                .addSubcommand((subcommand) =>
-                    subcommand.setName('wallpaper').setDescription('Returns a wallpaper from HDQWalls')
-                        .addStringOption(option => option.setName('name').setDescription('Enter a name').setRequired(true))
-                )
         ),
 
     /** 

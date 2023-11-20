@@ -21,6 +21,11 @@ module.exports = {
         )
         .addSubcommand(subcommand =>
             subcommand
+                .setName('restart')
+                .setDescription('Restarts the bot')
+        )    
+        .addSubcommand(subcommand =>
+            subcommand
                 .setName('badge')
                 .setDescription('Manage the bot badges')
                 .addBooleanOption(option => option.setName('new').setDescription('Select a boolean').setRequired(true))
@@ -49,25 +54,6 @@ module.exports = {
                 )
                 .addUserOption(option => option.setName('user').setDescription('Select a user').setRequired(true))
                 .addNumberOption(option => option.setName('amount').setDescription('Amount of credits').setRequired(true))
-        )
-        .addSubcommand(subcommand =>
-            subcommand
-                .setName('args')
-                .setDescription('Post preset messages')
-                .addStringOption(option =>
-                    option.setName('message')
-                        .setDescription('Select a message')
-                        .setRequired(true)
-                        .addChoices(
-                            { name: 'Information', value: 'information' },
-                            { name: 'Rules', value: 'rules' },
-                            { name: 'Applications', value: 'applications' },
-                            { name: 'Booster perks', value: 'boosterperks' },
-                            { name: 'Links', value: 'links' },
-                            { name: 'Rewards', value: 'rewards' },
-                            { name: 'Our bots', value: 'ourbots' }
-                        )
-                )
         )
         .addSubcommand(subcommand =>
             subcommand

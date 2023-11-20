@@ -10,19 +10,20 @@ module.exports = async (client, interaction, args) => {
     type: 'editreply'
   }, interaction);
   const badgeFlags = {
-    DEVELOPER: client.emotes.badges.developer,
-    BUGS: client.emotes.badges.bug,
-    MANAGEMENT: client.emotes.badges.management,
-    PREMIUM: client.emotes.badges.premium,
-    SUPPORTER: client.emotes.badges.supporter,
-    TEAM: client.emotes.badges.team,
-    BOOSTER: client.emotes.badges.booster,
-    PARTNER: client.emotes.badges.partner,
-    VOTER: client.emotes.badges.voter,
-    SUPPORT: client.emotes.badges.support,
-    MODERATOR: client.emotes.badges.moderator,
-    DESIGNER: client.emotes.badges.designer,
-    MARKETING: client.emotes.badges.marketing
+	DEVELOPER: client.emotes.badges.developer + ' - Developer',
+	BOOSTER: client.emotes.badges.booster + ' - Booster',
+	BUGS: client.emotes.badges.bug + ' - Bug Hunter',
+	MANAGEMENT: client.emotes.badges.management + ' - Owner',
+	PREMIUM: client.emotes.badges.premium + ' - Premium',
+	SUPPORTER: client.emotes.badges.supporter + ' - Supporter',
+	TEAM: client.emotes.badges.team + ' - Team',
+	PARTNER: client.emotes.badges.partner + ' - Partner',
+	VOTER: client.emotes.badges.voter + ' - Voter',
+	SUPPORT: client.emotes.badges.support + ' - Support',
+	MODERATOR: client.emotes.badges.moderator + ' - Moderator',
+	DESIGNER: client.emotes.badges.designer + ' - Designer',
+	MARKETING: client.emotes.badges.marketing + ' - Marketing',
+	TESTER: client.emotes.badges.tester + ' - Tester'     
   }
 
   const flags = {
@@ -85,7 +86,7 @@ module.exports = async (client, interaction, args) => {
       },
       {
         name: "Badges",
-        value: `${Badges.FLAGS ? Badges.FLAGS.map(flag => badgeFlags[flag]).join(' ') : 'None'}`,
+        value: `${Badges.FLAGS ? Badges.FLAGS.map(flag => badgeFlags[flag]).join('\n') : 'None'}`,
         inline: true,
       },
       {

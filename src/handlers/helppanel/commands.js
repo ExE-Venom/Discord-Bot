@@ -171,7 +171,23 @@ module.exports = async (client) => {
             name: `🔊┆Voice`,
             value: `\`/voice help\``,
             inline: true
+        },        
+        {
+            name: `👤┆ReactionRoles`,
+            value: `\`/reactionroles help\``,
+            inline: true
         },
+        {
+            name: `📄┆Embed`,
+            value: `\`/embed channel:Channel for sending embed\``,
+            inline: true
+        },
+        {
+            name: `🪲┆Report`,
+            value: `\`/report type:Bug/User description:Description\``,
+            inline: true
+        },
+
     ];
 
     client.on(Discord.Events.InteractionCreate, async (interaction) => {

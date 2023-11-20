@@ -9,7 +9,7 @@ module.exports = async (client, interaction, args) => {
         setEndTimestamp: Date.now()
     }).then(() => {
         client.succNormal({
-            text: `Giveaway wil end in less than ${client.giveawaysManager.options.updateCountdownEvery / 1000} seconds`,
+            text: `Giveaway will end soon.`,
             type: 'editreply'
         }, interaction);
     }).catch((err) => {

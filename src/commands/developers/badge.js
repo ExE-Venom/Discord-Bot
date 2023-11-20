@@ -17,7 +17,6 @@ module.exports = async (client, interaction, args) => {
         PREMIUM: client.emotes.badges.premium,
         SUPPORTER: client.emotes.badges.supporter,
         TEAM: client.emotes.badges.team,
-        BOOSTER: client.emotes.badges.booster,
         PARTNER: client.emotes.badges.partner,
         VOTER: client.emotes.badges.voter,
         SUPPORT: client.emotes.badges.support,
@@ -25,7 +24,8 @@ module.exports = async (client, interaction, args) => {
         DESIGNER: client.emotes.badges.designer,
         MARKETING: client.emotes.badges.marketing,
         ACTIVE: client.emotes.badges.active,
-        VIP: client.emotes.badges.vip
+        VIP: client.emotes.badges.vip,
+        TESTER: client.emotes.badges.tester
     }
 
     const boolean = interaction.options.getBoolean('new');

@@ -43,11 +43,6 @@ module.exports = {
         )
         .addSubcommand(subcommand =>
             subcommand
-                .setName('socials')
-                .setDescription('Get the Bot socials')
-        )
-        .addSubcommand(subcommand =>
-            subcommand
                 .setName('support')
                 .setDescription('Get an invite of the support server')
         )
