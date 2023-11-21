@@ -53,7 +53,7 @@ module.exports = async (client) => {
                         },
                         {
                             name: "📃┆Changelogs",
-                            value: 'none',
+                            value: 'Removed many bugs.',
                             inline: false,
                         }
                     ],
