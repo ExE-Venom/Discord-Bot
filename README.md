@@ -5,5 +5,5 @@
 </p>
 
 <p align="center">
-  [Join the support server](https://discord.gg/6K7K2wPtBG) \| [Join the community server](https://discord.gg/9DUP4JRd9w)
+  Join the [support server](https://discord.gg/6K7K2wPtBG) | Join the [community server](https://discord.gg/9DUP4JRd9w)
 </p>
