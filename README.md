@@ -5,6 +5,4 @@
 >  </a>
 ></p>
 >
-><iframe src="https://discord.com/widget?id=1143153710189514802&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
->
 > [🚀Support Server](https://discord.gg/6K7K2wPtBG) | [🎈Community Server(🇷🇺)](https://discord.gg/9DUP4JRd9w)
