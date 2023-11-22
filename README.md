@@ -4,4 +4,5 @@
   </a>
 </p>
 
-  [🚀Support Server](https://discord.gg/6K7K2wPtBG) | [🎈Community Server(🇷🇺)](https://discord.gg/9DUP4JRd9w)
+> [!NOTE]
+> [🚀Support Server](https://discord.gg/6K7K2wPtBG) | [🎈Community Server(🇷🇺)](https://discord.gg/9DUP4JRd9w)
