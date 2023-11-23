@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
-
 const Schema = require("../../database/models/economy");
 const store = require("../../database/models/economyStore");
 const items = require("../../database/models/economyItems");
+
 module.exports = async (client, interaction, args) => {
     const storeData = await store.find({ Guild: interaction.guild.id });
     if (storeData.length == 0) return client.errNormal({
@@ -16,12 +16,17 @@ module.exports = async (client, interaction, args) => {
         const role = interaction.guild.roles.cache.get(d.Role);
 
         const generated = {
-            label: `${role.name.substr(0, 24)}.`,
+            label: `${role.name.substr(0, 24)} - ${d.Amount}$`,
             value: role.id,
         }
 
         return labels.push(generated);
     });
+
+    // Adding a section to display prices of all items
+    const prices = storeData.map(e => `**<@&${e.Role}>** - ${client.emotes.economy.coins} $${e.Amount}`);
+    const priceText = `\n\n**Prices:**\n**Fishingrod** - ${client.emotes.economy.coins} 100$\n${prices.join('\n')}`;
+    
     labels.push({
         label: `Fishingrod`,
         value: `fishingrod`,
@@ -31,10 +36,10 @@ module.exports = async (client, interaction, args) => {
 
     client.embed({
         title: `🛒・${interaction.guild.name}'s Store`,
-        desc: `Choose a item from the menu to buy.\nTo see the price of all items, write \`/economy store\``,
+        desc: `Choose an item from the menu to buy.${priceText}`,
         components: [select],
         type: 'editreply'
-    }, interaction)
+    }, interaction);
 
     const filter = i => {
         return i.user.id === interaction.user.id;
@@ -110,5 +115,4 @@ module.exports = async (client, interaction, args) => {
             components: []
         }, i);
     })
-}
-
+};
