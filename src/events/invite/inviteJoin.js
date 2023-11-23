@@ -16,7 +16,7 @@ module.exports = async (client, member, invite, inviter) => {
             joinMessage = joinMessage.replace(`{user:username}`, member.user.username)
             joinMessage = joinMessage.replace(`{user:discriminator}`, member.user.discriminator)
             joinMessage = joinMessage.replace(`{user:tag}`, member.user.tag)
-            joinMessage = joinMessage.replace(`{user:mention}`, member)
+            joinMessage = joinMessage.replace(/\{user:mention\}/g, member)
 
             joinMessage = joinMessage.replace(`{inviter:username}`, "System")
             joinMessage = joinMessage.replace(`{inviter:discriminator}`, "#0000")

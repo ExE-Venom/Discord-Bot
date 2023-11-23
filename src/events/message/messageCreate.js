@@ -127,17 +127,26 @@ module.exports = async (client, message) => {
             }
           }
 
-          levelRewards.findOne(
-            { Guild: message.guild.id, Level: user.level },
-            async (err, data) => {
-              if (data) {
-                message.guild.members.cache
-                  .get(message.author.id)
-                  .roles.add(data.Role)
-                  .catch((e) => { });
-              }
-            }
-          );
+          	levelRewards.findOne(
+			    { Guild: message.guild.id, Level: user.level },
+			    async (err, data) => {
+			        if (data) {
+			            const member = message.guild.members.cache.get(message.author.id);
+			            if (member) {
+			                try {
+			                    if (data.Role) {
+			                        await member.roles.add(data.Role);
+			                    }
+			                    if (data.DelRole) {
+			                        await member.roles.remove(data.DelRole);
+			                    }
+			                } catch (e) {
+			                    console.error('Error while managing roles:', e);
+			                }
+			            }
+			        }
+			    }
+			);
         }
       }
     }

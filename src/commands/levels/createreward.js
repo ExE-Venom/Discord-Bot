@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
-
 const Schema = require("../../database/models/levelRewards");
 
 module.exports = async (client, interaction, args) => {
     let level = interaction.options.getNumber('level');
     let role = interaction.options.getRole('role');
+    let delrole = interaction.options.getRole('delrole');
 
     const perms = await client.checkUserPerms({
         flags: [Discord.PermissionsBitField.Flags.ManageMessages],
@@ -13,33 +13,53 @@ module.exports = async (client, interaction, args) => {
 
     if (perms == false) return;
 
-    Schema.findOne({ Guild: interaction.guild.id, Level: level }, async (err, data) => {
-        if (data) {
-            return client.errNormal({ 
-                error: "This level already has a reward!",
-                type: 'editreply'
-            }, interaction);
-        }
-        else {
-            new Schema({
-                Guild: interaction.guild.id,
-                Level: level,
-                Role: role.id
-            }).save();
+    let data = await Schema.findOne({ Guild: interaction.guild.id, Level: level });
 
-            client.succNormal({ 
-                text: `Level reward created`,
-                fields: [
-                    {
-                        name: "📘┆Role",
-                        value: `${role}`,
-                        inline: true,
-                    }
-                ],
-                type: 'editreply'
-            }, interaction);
+    if (data) {
+        if (role) {
+            data.Role = role.id;
         }
-    })
+        if (delrole) {
+            data.DelRole = delrole.id; // Изменение здесь
+        }
+    } else {
+        data = new Schema({
+            Guild: interaction.guild.id,
+            Level: level,
+            Role: role ? role.id : null,
+            DelRole: delrole ? delrole.id : null
+        });
+    }
+
+    try {
+        await data.save();
+
+        const fields = [];
+        if (role) {
+            fields.push({
+                name: "📘┆Role",
+                value: `${role}`,
+                inline: true,
+            });
+        }
+        if (delrole) {
+            fields.push({
+                name: "🗑️┆Role to Delete",
+                value: `${delrole}`,
+                inline: true,
+            });
+        }
+
+        client.succNormal({ 
+            text: data._id ? `Level reward updated` : `Level reward created`,
+            fields: fields,
+            type: 'editreply'
+        }, interaction);
+    } catch (err) {
+        console.error('Error occurred while saving data:', err);
+        client.errNormal({ 
+            error: `An error occurred while saving data.`,
+            type: 'editreply'
+        }, interaction);
+    }
 }
-
- 

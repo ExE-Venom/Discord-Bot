@@ -18,7 +18,21 @@ module.exports = async (client, interaction, args) => {
         const target = interaction.options.getUser('user');
         const xp = interaction.options.getNumber('amount');
 
-        const user = await client.setXP(target.id, interaction.guild.id, xp);
+        let user = await Schema.findOne({ userID: target.id, guildID: interaction.guild.id });
+
+        if (!user) {
+            user = new Schema({
+                userID: target.id,
+                guildID: interaction.guild.id,
+                username: target.username,
+                xp: 0,
+                level: 0,
+                lastUpdated: new Date()
+            });
+        }
+
+        user.xp = xp;
+        await user.save();
 
         client.succNormal({ 
             text: `XP has been modified successfully`,
@@ -44,5 +58,3 @@ module.exports = async (client, interaction, args) => {
         }, interaction);
     }
 }
-
- 

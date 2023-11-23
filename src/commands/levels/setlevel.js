@@ -18,7 +18,21 @@ module.exports = async (client, interaction, args) => {
         const target = interaction.options.getUser('user');
         const level = interaction.options.getNumber('level');
 
-        const user = await client.setLevel(target.id, interaction.guild.id, level);
+        let user = await Schema.findOne({ userID: target.id, guildID: interaction.guild.id });
+
+        if (!user) {
+            user = new Schema({
+                userID: target.id,
+                guildID: interaction.guild.id,
+                username: target.username,
+                xp: 0,
+                level: 0,
+                lastUpdated: new Date()
+            });
+        }
+
+        user.level = level;
+        await user.save();
 
         client.succNormal({ 
             text: `Level has been modified successfully`,
@@ -44,5 +58,3 @@ module.exports = async (client, interaction, args) => {
         }, interaction);
     }
 }
-
- 

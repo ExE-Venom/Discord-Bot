@@ -30,7 +30,8 @@ module.exports = {
                 .setName('createreward')
                 .setDescription('Create a level reward')
                 .addNumberOption(option => option.setName('level').setDescription('Enter a level').setRequired(true))
-                .addRoleOption(option => option.setName('role').setDescription('The role for this reward').setRequired(true))
+                .addRoleOption(option => option.setName('role').setDescription('The role that will be given').setRequired(true))
+                .addRoleOption(option => option.setName('delrole').setDescription('The role that will be removed').setRequired(false))
         )
         .addSubcommand(subcommand =>
             subcommand

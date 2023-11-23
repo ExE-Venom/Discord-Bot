@@ -10,7 +10,7 @@ module.exports = async (client, interaction, args) => {
 
     if (perms == false) return;
 
-    const message = interaction.options.getString('message');
+	const message = interaction.options.getString('message').replace(/\\n/g, '\n');
 
     if (message.toUpperCase() == "HELP") {
         return client.embed({
@@ -29,7 +29,9 @@ module.exports = async (client, interaction, args) => {
             \`{inviter:invites:left}\` - inviter's left invites
                     
             \`{guild:name}\` - Server name
-            \`{guild:members}\` - Server members count`,
+            \`{guild:members}\` - Server members count
+            
+            ‼️ DANGER!!! Using two identical options in one message will result in one of them not being formed properly.`,
             type: 'editreply'
         }, interaction)
     }

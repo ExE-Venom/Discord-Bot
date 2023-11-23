@@ -4,7 +4,7 @@ const ticketSchema = require("../../database/models/tickets");
 
 module.exports = async (client, interaction, args) => {
     const name = interaction.options.getString('name');
-    const description = interaction.options.getString('description');
+    const description = interaction.options.getString('description').replace(/\\n/g, '\n');
 
     ticketSchema.findOne({ Guild: interaction.guild.id }, async (err, ticketData) => {
         if (ticketData) {

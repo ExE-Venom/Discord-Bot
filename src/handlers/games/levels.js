@@ -36,6 +36,7 @@ module.exports = async (client) => {
             const newUser = new levels({
                 userID: userId,
                 guildID: guildId,
+                username: target.username,
                 xp: xp,
                 level: Math.floor(0.1 * Math.sqrt(xp))
             }).save();
