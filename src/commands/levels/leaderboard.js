@@ -12,8 +12,8 @@ module.exports = async (client, interaction, args) => {
 
     const lb = rawLeaderboard.map((e, index) => {
         const rank = rawLeaderboard.findIndex(i => i.guildID === interaction.guild.id && i.userID === e.userID) + 1;
-        const username = e.username || 'Unknown'; // Проверяем наличие username и устанавливаем значение по умолчанию, если его нет
-        return `**${rank}** | <@${e.userID}> (${username}) - Level: \`${e.level.toLocaleString()}\` (${e.xp.toLocaleString()} xp)`;
+        // const username = e.username || 'Unknown';  Проверяем наличие username и устанавливаем значение по умолчанию, если его нет
+        return `**${rank}** | <@${e.userID}> - Level: \`${e.level.toLocaleString()}\` (${e.xp.toLocaleString()} xp)`;
     });
 
     await client.createLeaderboard(`🆙・Levels - ${interaction.guild.name}`, lb, interaction);
