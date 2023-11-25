@@ -59,6 +59,47 @@ If you like this repository, feel free to leave a star ⭐ to motivate me!
   </a>
 </p>
 
+## <img src="https://cdn.discordapp.com/emojis/1009754836314628146.gif" width="25px" height="25px">》Requirements
+- NodeJs v17+
+- Java v13 for lavalink server.
+- Discord Token. Get it from [Discord Developers Portal](https://discord.com/developers/applications)
+- Mongo Database URL. Get it from [MongoDB](https://cloud.mongodb.com/v2/635277bf9f5c7b5620db28a4#clusters)
+- Giphy API Token. Get it from [Giphy Developers Portal](https://developers.giphy.com/)
+- OpenAI API Key `for ai chatbot`. Get it from [OpenAi Developers Portal](https://beta.openai.com/account/api-keys)
+- ClientID `for loading slash commands.` [Discord Developers Portal](https://discord.com/developers/applications)
+- Spotify client ID `for spotify support` [Click here to get](https://developer.spotify.com/dashboard/login)
+- Spotify client Secret `for spotify support` [Click here to get](https://developer.spotify.com/dashboard/login)
+
+## <img src="https://cdn.discordapp.com/emojis/814216203466965052.png" width="25px" height="25px">》Installation Guide
+
+### <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="15px" height="15px"> Installing via [NPM](https://www.npmjs.com/)
+Clone the repo by running
+```bash
+git clone https://github.com/Almaziik777/Discord-Bot.git
+```
+### After cloning Fill all requirement in `.env` **(rename `.env.example` to `.env`)**, then run
+
+```bash
+npm install
+```
+To start your bot 
+
+```js
+node src/index.js
+```
+
+## <img src="https://cdn.discordapp.com/emojis/1036083490292244493.png" width="15px" height="15px">》Support Server
+[![DiscordBanner](https://invidget.switchblade.xyz/techpoint-1016942011024158782)](https://discord.gg/techpoint-1016942011024158782)
+
+[Support Server](https://discord.gg/techpoint-1016942011024158782) - Discord-Bot's Support Server Invite
+
+# <img src="https://cdn.discordapp.com/emojis/1015745034076819516.png" width="25px" height="25px">》Faq
+> How to get access to Developers Commands? You will have to set them up via MongoDB or run the below command.
+
+```bash
+npm run add-dev YOUR_Discord_ID
+```
+
 [version-shield]: https://img.shields.io/github/package-json/v/Almaziik777/Discord-Bot?style=for-the-badge
 [version-url]: https://github.com/brblacky/WaveMusic
 [contributors-shield]: https://img.shields.io/github/contributors/Almaziik777/Discord-Bot.svg?style=for-the-badge
