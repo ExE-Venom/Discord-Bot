@@ -7,9 +7,10 @@
 
 <center><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Discord-Bot&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" /></center>
 
-
-# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=1000&pause=100&multiline=true&repeat=false&random=false&width=435&height=80&lines=%F0%9F%91%BE+The+Huge+Discord+Bot;%F0%9F%91%91Owner%3A+Almaz;%F0%9F%91%A8%E2%80%8D%F0%9F%92%BBDevelopers%3A+f1zyshka%2C+Almaz)](https://discord.com/api/oauth2/authorize?client_id=772520466169593857&permissions=8&scope=bot%20applications.commands)
-# [🚀Support Server](https://discord.gg/6K7K2wPtBG) | [🎈Community Server(🇷🇺)](https://discord.gg/9DUP4JRd9w)
+<p align="center">
+  <a href="https://github.com/Almaziik777/Discord-Bot">
+    <img src="https://cdn.discordapp.com/attachments/1146463856697282640/1177861340879138836/fPxPhlTt1Nlr.png?ex=65740bdb&is=656196db&hm=8ef4b541923d0ca679acbc76181534fd230b313163ed5ed38167959ec396fd2d&" alt="Almaz-Icon" width="200" height="200">
+  </a>
 
 [version-shield]: https://img.shields.io/github/package-json/v/Almaziik777/Discord-Bot?style=for-the-badge
 [version-url]: https://github.com/brblacky/WaveMusic
