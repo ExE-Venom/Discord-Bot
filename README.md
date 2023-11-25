@@ -54,7 +54,8 @@ If you like this repository, feel free to leave a star ⭐ to motivate me!
 <p align="center">
   <a href="https://github.com/almaziik777/discord-bot">
     <img src="https://i.ibb.co/3FVPMrR/image.png">
-    <img src="https://i.ibb.co/3FVPMrR/image.png">
+    <img src="https://i.ibb.co/5Gn7Wqx/image.png">
+    <img src="https://i.ibb.co/HN11stS/image.png">
   </a>
 </p>
 
