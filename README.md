@@ -37,15 +37,13 @@ If you like this repository, feel free to leave a star ⭐ to motivate me!
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=almaziik777&repo=Discord-bot&theme=tokyonight)](https://github.com/almaziik777/Discord-bot)
 ## <img src="https://cdn.discordapp.com/emojis/852881450667081728.gif" width="20px" height="20px">》Feature
 - [x] Slash Commands 
-- [x] Upto date with Discord.js v14
 - [x] Automod
 - [x] Custom Commands
 - [x] Music Commands
 - [x] Tickets
 - [x] Utility Commands
-- [x] Suggestions 
+- [x] Moderation 
 - [x] Reaction Roles
-- [x] Family
 - [x] Giveaways 
 - [x] Easy to use
 - [x] Customizable
@@ -55,6 +53,7 @@ If you like this repository, feel free to leave a star ⭐ to motivate me!
 <br />
 <p align="center">
   <a href="https://github.com/almaziik777/discord-bot">
+    <img src="https://i.ibb.co/3FVPMrR/image.png">
     <img src="https://i.ibb.co/3FVPMrR/image.png">
   </a>
 </p>
