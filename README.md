@@ -28,9 +28,37 @@
 ### <img src="https://cdn.discordapp.com/emojis/1055803759831294013.png" width="20px" height="20px"> 》Notice 
 > You may not claim this as your own! The original source was created by [Dotwood Media](https://github.com/DotwoodMedia) and [Graphix Development](https://github.com/GraphixDevelopment). The source is modified and being updated by me (Almaz)
 
-> Discord-Bot is a multipurpose Discord bot base in [Discord.js](https://github.com/Discordjs/discordjs)
+> Almaz is a multipurpose Discord bot base in [Discord.js](https://github.com/Discordjs/discordjs)
 If you like this repository, feel free to leave a star ⭐ to motivate me!
-> 
+
+<!-- ABOUT THE PROJECT -->
+
+## <img src="https://cdn.discordapp.com/emojis/859424401186095114.png" width="20px" height="20px">》Description 
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=corwindev&repo=Discord-bot&theme=tokyonight)](https://github.com/corwindev/Discord-bot)
+## <img src="https://cdn.discordapp.com/emojis/852881450667081728.gif" width="20px" height="20px">》Feature
+- [x] Slash Commands 
+- [x] Upto date with Discord.js v14
+- [x] Automod
+- [x] Custom Commands
+- [x] Music Commands
+- [x] Tickets
+- [x] Utility Commands
+- [x] Suggestions 
+- [x] Reaction Roles
+- [x] Family
+- [x] Giveaways 
+- [x] Easy to use
+- [x] Customizable
+- [x] And much more
+- [x] Don't wanna host it yourself? [Use our public bot](https://discord.com/api/oauth2/authorize?client_id=860390761307439114&permissions=8&scope=bot%20applications.commands)
+## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px">》Screenshots
+<br />
+<p align="center">
+  <a href="https://github.com/corwindev/discord-bot">
+    <img src="https://cdn.discordapp.com/attachments/778665159316209748/1055832339328024666/207117434-d98356b1-bf19-418e-9e12-0ef83e0d9a21.png">
+  </a>
+</p>
+
 [version-shield]: https://img.shields.io/github/package-json/v/Almaziik777/Discord-Bot?style=for-the-badge
 [version-url]: https://github.com/brblacky/WaveMusic
 [contributors-shield]: https://img.shields.io/github/contributors/Almaziik777/Discord-Bot.svg?style=for-the-badge
