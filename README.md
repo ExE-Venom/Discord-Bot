@@ -5,7 +5,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-<center><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Discord-Bot&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" /></center>
+<center><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header&text=Almaz&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" /></center>
 
 <p align="center">
   <a href="https://github.com/Almaziik777/Discord-Bot">
