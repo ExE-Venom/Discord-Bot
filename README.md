@@ -11,6 +11,7 @@
   <a href="https://github.com/Almaziik777/Discord-Bot">
     <img src="https://cdn.discordapp.com/attachments/1146463856697282640/1177861340879138836/fPxPhlTt1Nlr.png?ex=65740bdb&is=656196db&hm=8ef4b541923d0ca679acbc76181534fd230b313163ed5ed38167959ec396fd2d&" alt="Almaz-Icon" width="200" height="200">
   </a>
+</p>
 
 [version-shield]: https://img.shields.io/github/package-json/v/Almaziik777/Discord-Bot?style=for-the-badge
 [version-url]: https://github.com/brblacky/WaveMusic
