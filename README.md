@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://github.com/Almaziik777/Discord-Bot">
-    <img src="https://cdn.discordapp.com/attachments/1146463856697282640/1177861340879138836/fPxPhlTt1Nlr.png" alt="Almaz-Icon" width="200" height="200">
+    <img src="https://ibb.co/7vYfdvN" alt="Almaz-Icon" width="200" height="200">
 
   <h3 align="center">Almaz</h3>
 
@@ -26,7 +26,7 @@
 <!-- NOTICE -->
 
 ### <img src="https://cdn.discordapp.com/emojis/1055803759831294013.png" width="20px" height="20px"> 》Notice 
-> You may not claim this as your own! The original source was created by [Dotwood Media](https://github.com/DotwoodMedia) and [Graphix Development](https://github.com/GraphixDevelopment). The source is modified and being updated by me(Almaz)
+> You may not claim this as your own! The original source was created by [Dotwood Media](https://github.com/DotwoodMedia) and [Graphix Development](https://github.com/GraphixDevelopment). The source is modified and being updated by me (Almaz)
 
 > Discord-Bot is a multipurpose Discord bot base in [Discord.js](https://github.com/Discordjs/discordjs)
 If you like this repository, feel free to leave a star ⭐ to motivate me!
