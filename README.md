@@ -5,6 +5,9 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+[![Discord](https://img.shields.io/discord/1143153710189514802.svg?logo=discord)](https://discord.gg/6K7K2wPtBG)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/almaziik777/discord-bot)](https://github.com/almaziik777/discord-bot/releases)
+![Downloads](https://img.shields.io/github/downloads/almaziik777/discord-bot/total)
 <center><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Almaz&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" /></center>
 
 <p align="center">
