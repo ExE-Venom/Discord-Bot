@@ -77,7 +77,7 @@ If you like this repository, feel free to leave a star ⭐ to motivate me!
 ```bash
 git clone https://github.com/Almaziik777/Discord-Bot.git
 ```
-### After cloning Fill all requirement in `.env` **(rename `.env.example` to `.env`)**, then run
+### After cloning Fill all requirement in `.env`, then run
 
 ```bash
 npm install
@@ -89,9 +89,9 @@ node src/index.js
 ```
 
 ## <img src="https://cdn.discordapp.com/emojis/1036083490292244493.png" width="15px" height="15px">》Support Server
-[![DiscordBanner](https://invidget.switchblade.xyz/techpoint-1016942011024158782)](https://discord.gg/techpoint-1016942011024158782)
+[![DiscordBanner](https://invidget.switchblade.xyz/6K7K2wPtBG)](https://discord.gg/6K7K2wPtBG)
 
-[Support Server](https://discord.gg/techpoint-1016942011024158782) - Discord-Bot's Support Server Invite
+[Support Server](https://discord.gg/6K7K2wPtBG) - Almaz's Support Server Invite
 
 # <img src="https://cdn.discordapp.com/emojis/1015745034076819516.png" width="25px" height="25px">》Faq
 > How to get access to Developers Commands? You will have to set them up via MongoDB or run the below command.
