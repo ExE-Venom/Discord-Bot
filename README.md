@@ -9,8 +9,8 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/almaziik777/discord-bot)](https://github.com/almaziik777/discord-bot/releases)
 ![Downloads](https://img.shields.io/github/downloads/almaziik777/discord-bot/total)
 <center><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Almaz&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" /></center>
-
-<a href="<https://discord.com/users/772520466169593857>"> <img src="https://discord.c99.nl/widget/theme-1/772520466169593857.png" alt="contact mee">
+<p align="center">
+  <a href="<https://discord.com/users/772520466169593857>"> <img src="https://discord.c99.nl/widget/theme-1/772520466169593857.png" alt="bot">
 
 <p align="center">
   <a href="https://github.com/Almaziik777/Discord-Bot">
