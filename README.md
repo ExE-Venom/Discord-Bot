@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://github.com/Almaziik777/Discord-Bot">
-    <img src="https://ibb.co/7vYfdvN" alt="Almaz-Icon" width="200" height="200">
+    <img src="https://i.ibb.co/rk7jRkf/Almaz-BOT-Avatar-2-round.png" alt="Almaz-Icon" width="200" height="200">
 
   <h3 align="center">Almaz</h3>
 
