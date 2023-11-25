@@ -61,7 +61,7 @@ If you like this repository, feel free to leave a star ⭐ to motivate me!
 
 ## <img src="https://cdn.discordapp.com/emojis/1009754836314628146.gif" width="25px" height="25px">》Requirements
 - NodeJs v17+
-- Java v13 for lavalink server.
+- Java v14 for lavalink server.
 - Discord Token. Get it from [Discord Developers Portal](https://discord.com/developers/applications)
 - Mongo Database URL. Get it from [MongoDB](https://cloud.mongodb.com/v2/635277bf9f5c7b5620db28a4#clusters)
 - Giphy API Token. Get it from [Giphy Developers Portal](https://developers.giphy.com/)
@@ -93,8 +93,9 @@ node src/index.js
 
 [Support Server](https://discord.gg/6K7K2wPtBG) - Almaz's Support Server Invite
 
-# <img src="https://cdn.discordapp.com/emojis/1015745034076819516.png" width="25px" height="25px">》Faq
-> How to get access to Developers Commands? You will have to set them up via MongoDB or run the below command.
+# <img src="https://cdn.discordapp.com/emojis/1015745034076819516.png" width="25px" height="25px">》FAQ
+> Q: How to get access to Developers Commands?
+> A: You will have to set them up via MongoDB or run the below command.
 
 ```bash
 npm run add-dev YOUR_Discord_ID
