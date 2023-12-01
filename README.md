@@ -31,11 +31,10 @@
 <!-- NOTICE -->
 
 ### <img src="https://cdn.discordapp.com/emojis/1055803759831294013.png" width="20px" height="20px"> 》Notice 
-> You may not claim this as your own! The original source was created by [Dotwood Media](https://github.com/DotwoodMedia) and [Graphix Development](https://github.com/GraphixDevelopment). The source is modified and being updated by me (Almaz)
+ **You may not claim this as your own! The original source was created by [Dotwood Media](https://github.com/DotwoodMedia) and [Graphix Development](https://github.com/GraphixDevelopment). The source is modified and being updated by me.**
 
-> Almaz is a multipurpose Discord bot base in [Discord.js](https://github.com/discordjs/discord.js)
-If you like this repository, feel free to leave a star ⭐ to motivate me!
-
+ **Almaz is a multipurpose Discord bot base in [Discord.js](https://github.com/discordjs/discord.js)**
+**If you like this repository, feel free to leave a star ⭐ to motivate me!**
 <!-- ABOUT THE PROJECT -->
 
 ## <img src="https://cdn.discordapp.com/emojis/859424401186095114.png" width="20px" height="20px">》Description 
@@ -100,7 +99,8 @@ node src/index.js
 
 # <img src="https://cdn.discordapp.com/emojis/1015745034076819516.png" width="25px" height="25px">》FAQ
 > Q: How to get access to Developers Commands?
-> A: You will have to set them up via MongoDB or run the below command.
+> 
+> A: You will have to configure them via MongoDB or run the command below.
 
 ```bash
 npm run add-dev YOUR_Discord_ID
