@@ -75,17 +75,33 @@ npm install
 node src/index.js
 ```
 # Or (with free hosting [Nexcord](https://nexcord.com)):
-### - Creating a server:
+## - Creating a server:
 ### 1. Go to the [Nexcord](https://my.nexcord.com/home)
 ### 2. Click on [Servers](https://my.nexcord.com/servers)
 ### 3. Click on [Create](https://my.nexcord.com/servers/create)
 * **If you have this bug: [Image](https://i.ibb.co/zFMmBnc/image.png), reduce your zoom (CTRL + MMB-)**
-### 4. Name your server. In `Language / Software` choose `Language`, then in `Specification` choose `node.js generic`. Done!
+### 4. Enter this settings:
+* ### 4.1 Name your server.
+* ### 4.2 In `Language / Software` choose `Language`.
+* ### 4.3 Then in `Specification` choose `node.js generic`. 
 
-### - Managing server:
+## - Managing server:
 ### 1. Go to the [Servers](https://my.nexcord.com/servers)
 ### 2. Click on Manage
 ### 3. Click on Startup
+### 4. In Startup
+* ### 4.1 In `Git Repo Address` enter
+```link
+https://github.com/Almaziik777/Discord-Bot
+```
+* ### 4.2 Turn on `Auto Update`
+* ### 4.3 In `JS file` enter
+```js
+src/index.js
+```
+### 5. Click on Console on the sidebar or at the top
+### 6. Click on Start, then wait until the end of loading
+
 
 ## <img src="https://cdn.discordapp.com/emojis/1036083490292244493.png" width="15px" height="15px">》Support Server
 [![DiscordBanner](https://invidget.switchblade.xyz/6K7K2wPtBG)](https://discord.gg/6K7K2wPtBG)
