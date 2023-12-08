@@ -6,8 +6,6 @@
 [![MIT License][license-shield]][license-url]
 
 [![Discord](https://img.shields.io/discord/1143153710189514802.svg?logo=discord)](https://discord.gg/6K7K2wPtBG)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/almaziik777/discord-bot)](https://github.com/almaziik777/discord-bot/releases)
-![Downloads](https://img.shields.io/github/downloads/almaziik777/discord-bot/total)
 <center><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Almaz&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" /></center>
 <p align="center">
   <a href="<https://discord.com/users/772520466169593857>"> <img src="https://discord.c99.nl/widget/theme-1/772520466169593857.png" alt="bot">
@@ -37,31 +35,17 @@
 **If you like this repository, feel free to leave a star ⭐ to motivate me!**
 <!-- ABOUT THE PROJECT -->
 
-## <img src="https://cdn.discordapp.com/emojis/859424401186095114.png" width="20px" height="20px">》Description 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=almaziik777&repo=Discord-bot&theme=tokyonight)](https://github.com/almaziik777/Discord-bot)
-## <img src="https://cdn.discordapp.com/emojis/852881450667081728.gif" width="20px" height="20px">》Feature
-- [x] Slash Commands 
-- [x] Automod
-- [x] Custom Commands
-- [x] Music Commands
-- [x] Tickets
-- [x] Utility Commands
-- [x] Moderation 
-- [x] Reaction Roles
-- [x] Giveaways 
-- [x] Easy to use
-- [x] Customizable
-- [x] And much more
-- [x] Don't wanna host it yourself? [Use our public bot](https://discord.com/api/oauth2/authorize?client_id=772520466169593857&permissions=8&scope=bot%20applications.commands)
-## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px">》Screenshots
+# Don't wanna host it yourself? [Use our public bot](https://discord.com/api/oauth2/authorize?client_id=772520466169593857&permissions=8&scope=bot%20applications.commands)
+
 <br />
-<p align="center">
-  <a href="https://github.com/almaziik777/discord-bot">
-    <img src="https://i.ibb.co/3FVPMrR/image.png">
-    <img src="https://i.ibb.co/5Gn7Wqx/image.png">
-    <img src="https://i.ibb.co/HN11stS/image.png">
+
+<p style="text-align: center;">
+  <a href="https://github.com/almaziik777/discord-bot" style="display: flex; justify-content: center; align-items: center;">
+    <img src="https://i.ibb.co/3FVPMrR/image.png" style="max-width: 100px; margin: 0 10px;">
   </a>
 </p>
+
+# If you want to host it yourself:
 
 ## <img src="https://cdn.discordapp.com/emojis/1009754836314628146.gif" width="25px" height="25px">》Requirements
 - NodeJs v17+
@@ -69,7 +53,6 @@
 - Discord Token. Get it from [Discord Developers Portal](https://discord.com/developers/applications)
 - Mongo Database URL. Get it from [MongoDB](https://cloud.mongodb.com/v2/635277bf9f5c7b5620db28a4#clusters)
 - Giphy API Token. Get it from [Giphy Developers Portal](https://developers.giphy.com/)
-- OpenAI API Key `for ai chatbot`. Get it from [OpenAi Developers Portal](https://beta.openai.com/account/api-keys)
 - ClientID `for loading slash commands.` [Discord Developers Portal](https://discord.com/developers/applications)
 - Spotify client ID `for spotify support` [Click here to get](https://developer.spotify.com/dashboard/login)
 - Spotify client Secret `for spotify support` [Click here to get](https://developer.spotify.com/dashboard/login)
@@ -77,20 +60,32 @@
 ## <img src="https://cdn.discordapp.com/emojis/814216203466965052.png" width="25px" height="25px">》Installation Guide
 
 ### <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="15px" height="15px"> Installing via [NPM](https://www.npmjs.com/)
-#### Clone the repo by running
+### 1. Clone the repo by running
 ```bash
 git clone https://github.com/Almaziik777/Discord-Bot.git
 ```
-### After cloning Fill all requirement in `.env`, then run
+### 2. After cloning Fill all requirements in `.env`, then run
 
 ```bash
 npm install
 ```
-#### To start your bot 
+### 3. To start your bot 
 
 ```js
 node src/index.js
 ```
+# Or (with free hosting [Nexcord](https://nexcord.com)):
+### - Creating a server:
+### 1. Go to the [Nexcord](https://my.nexcord.com/home)
+### 2. Click on [Servers](https://my.nexcord.com/servers)
+### 3. Click on [Create](https://my.nexcord.com/servers/create)
+* **If you have this bug: [Image](https://i.ibb.co/zFMmBnc/image.png), reduce your zoom (CTRL + MMB-)**
+### 4. Name your server. In `Language / Software` choose `Language`, then in `Specification` choose `node.js generic`. Done!
+
+### - Managing server:
+### 1. Go to the [Servers](https://my.nexcord.com/servers)
+### 2. Click on Manage
+### 3. Click on Startup
 
 ## <img src="https://cdn.discordapp.com/emojis/1036083490292244493.png" width="15px" height="15px">》Support Server
 [![DiscordBanner](https://invidget.switchblade.xyz/6K7K2wPtBG)](https://discord.gg/6K7K2wPtBG)
