@@ -68,7 +68,7 @@
 * ### 4.3 Then in `Specification` choose `node.js generic`. 
 
 ## 2. Uploading files:
-### 1. Clone the repo by running
+### 1. Clone the repo by running:
 ```bash
 git clone https://github.com/Almaziik777/Discord-Bot.git
 ```
