@@ -60,6 +60,11 @@ module.exports = {
                 )
                 .addSubcommand((subcommand) =>
                     subcommand
+                        .setName('tacobell')
+                        .setDescription('Play the tacobell sound')
+                )
+                .addSubcommand((subcommand) =>
+                    subcommand
                         .setName('thomas')
                         .setDescription('Play the thomas sound')
                 )
@@ -134,7 +139,7 @@ module.exports = {
                 )
         )
 
-        // Discord Sounds
+        // Memes Sounds
 
         .addSubcommandGroup((group) =>
             group
@@ -142,9 +147,39 @@ module.exports = {
                 .setDescription('Play the meme sounds in Bot')
                 .addSubcommand((subcommand) =>
                     subcommand
+                        .setName('bruh')
+                        .setDescription('Play the bruh sound'),
+                )
+                .addSubcommand((subcommand) =>
+                    subcommand
+                        .setName('ialwayscomeback')
+                        .setDescription('Play the i always come back sound')
+                )                            
+                .addSubcommand((subcommand) =>
+                    subcommand
                         .setName('fbi')
                         .setDescription('Play the fbi sound'),
                 )
+                .addSubcommand((subcommand) =>
+                    subcommand
+                        .setName('freddyfazbear')
+                        .setDescription('Play the freddy fazbear sound'),
+                )
+                .addSubcommand((subcommand) =>
+                    subcommand
+                        .setName('musicbox')
+                        .setDescription('Play the freddy fazbear sound'),
+                )
+                .addSubcommand((subcommand) =>
+                    subcommand
+                        .setName('freddygosling')
+                        .setDescription('Play the freddy fazbear sound'),
+                )
+                .addSubcommand((subcommand) =>
+                    subcommand
+                        .setName('piratesong')
+                        .setDescription('Play the foxy\'s pirate song sound'),
+                )      
                 .addSubcommand((subcommand) =>
                     subcommand
                         .setName('jeff')
@@ -155,6 +190,11 @@ module.exports = {
                         .setName('lambo')
                         .setDescription('Play the lambo sound'),
                 )
+                .addSubcommand((subcommand) =>
+                    subcommand
+                        .setName('lospenguinos')
+                        .setDescription('Play the los penguinos sound'),
+                )  
                 .addSubcommand((subcommand) =>
                     subcommand
                         .setName('missionfailed')
@@ -179,6 +219,11 @@ module.exports = {
                     subcommand
                         .setName('ohh')
                         .setDescription('Play the ohh sound'),
+                )
+                .addSubcommand((subcommand) =>
+                    subcommand
+                        .setName('rickroll')
+                        .setDescription('Play the rickroll sound'),
                 )
                 .addSubcommand((subcommand) =>
                     subcommand
