@@ -3,7 +3,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url] 
+[![MIT License][license-shield]][license-url]
 
 [![Discord](https://img.shields.io/discord/1143153710189514802.svg?logo=discord)](https://discord.gg/6K7K2wPtBG)
 <center><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Almaz&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" /></center>
