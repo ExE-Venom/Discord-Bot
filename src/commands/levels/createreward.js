@@ -20,7 +20,7 @@ module.exports = async (client, interaction, args) => {
             data.Role = role.id;
         }
         if (delrole) {
-            data.DelRole = delrole.id; // Изменение здесь
+            data.DelRole = delrole.id; 
         }
     } else {
         data = new Schema({

@@ -4,6 +4,10 @@ module.exports = async (client, interaction, args) => {
   const role = interaction.options.getRole('role');
   const perms = role.permissions.toArray();
 
+  if (!role) {
+    return interaction.reply('Please provide a valid role.');
+  }
+     
   client.embed({
     title: `ℹ️・Role information`,
     thumbnail: interaction.guild.iconURL({ dynamic: true, size: 1024 }),
@@ -26,11 +30,9 @@ module.exports = async (client, interaction, args) => {
       },
       {
         name: 'Role Permissions:',
-        value: `${perms.join(', ')}`
+        value: `${perms.length > 0 ? perms.join(', ') : "There are no permissions to display"}`
       }
     ],
     type: 'editreply'
   }, interaction)
 }
-
-   

@@ -22,8 +22,8 @@ module.exports = async (client, ban) => {
                 value: `- ${ban.user.id}`
             },
             {
-                name: `> Timestamp`,
-                value: `- <t:${Math.floor(ban.createdTimestamp / 1000)}:R>`
+                name: `> Timestamp (GMT)`,
+                value: `- ${new Date().toUTCString()}`
             }
         ]
     }, logsChannel).catch(() => { })
