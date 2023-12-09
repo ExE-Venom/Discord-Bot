@@ -125,8 +125,13 @@ src/index.js
 > A: You will have to configure them via MongoDB or run the command below.
 
 ```bash
-npm run add-dev YOUR_Discord_ID
+npm run add-dev Your_Discord_ID
 ```
+> Q: How to get my Discord ID?
+>
+> A: [Solution](https://support.discord.com/hc/en-us/articles/206346498)
+
+<p align="center">*Crickets noise*</p>
 
 [version-shield]: https://img.shields.io/github/package-json/v/Almaziik777/Discord-Bot?style=for-the-badge
 [version-url]: https://github.com/brblacky/WaveMusic
