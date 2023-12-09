@@ -3,7 +3,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![MIT License][license-shield]][license-url] 
 
 [![Discord](https://img.shields.io/discord/1143153710189514802.svg?logo=discord)](https://discord.gg/6K7K2wPtBG)
 <center><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Almaz&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" /></center>
@@ -46,7 +46,6 @@
 </p>
 
 # If you want to host it yourself:
-
 ## <img src="https://cdn.discordapp.com/emojis/1009754836314628146.gif" width="25px" height="25px">》Requirements
 - NodeJs v17+
 - Java v14 for lavalink server.
@@ -57,25 +56,8 @@
 - Spotify client ID `for spotify support` [Click here to get](https://developer.spotify.com/dashboard/login)
 - Spotify client Secret `for spotify support` [Click here to get](https://developer.spotify.com/dashboard/login)
 
-## <img src="https://cdn.discordapp.com/emojis/814216203466965052.png" width="25px" height="25px">》Installation Guide
-
-### <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="15px" height="15px"> Installing via [NPM](https://www.npmjs.com/)
-### 1. Clone the repo by running
-```bash
-git clone https://github.com/Almaziik777/Discord-Bot.git
-```
-### 2. After cloning Fill all requirements in `.env`, then run
-
-```bash
-npm install
-```
-### 3. To start your bot 
-
-```js
-node src/index.js
-```
-# Or (with free hosting [Nexcord](https://nexcord.com)):
-## - Creating a server:
+# <img src="https://cdn.discordapp.com/emojis/814216203466965052.png" width="25px" height="25px">》Very Detailed Installation Guide with Free Hosting - [Nexcord](https://nexcord.com):
+## 1. Creating a server:
 ### 1. Go to the [Nexcord](https://my.nexcord.com/home)
 ### 2. Click on [Servers](https://my.nexcord.com/servers)
 ### 3. Click on [Create](https://my.nexcord.com/servers/create)
@@ -85,22 +67,51 @@ node src/index.js
 * ### 4.2 In `Language / Software` choose `Language`.
 * ### 4.3 Then in `Specification` choose `node.js generic`. 
 
-## - Managing server:
-### 1. Go to the [Servers](https://my.nexcord.com/servers)
-### 2. Click on Manage
-### 3. Click on Startup
-### 4. In Startup
-* ### 4.1 In `Git Repo Address` enter
+## 2. Uploading files:
+### 1. Clone the repo by running:
+```bash
+git clone https://github.com/Almaziik777/Discord-Bot.git
+```
+### 2. Go to the [Servers](https://my.nexcord.com/servers)
+### 3. Click on Manage
+### 4. Click on Settings on the sidebar or at the top
+### 5. To transfer all files to Nexcord
+* ### 5.1 Run:
+```js
+node NexPush.js
+```
+* ### 5.2 In `Nexcord Username` enter your nickname from the Nexcord server:
+<p style="text-align: center;">
+  <a href="https://i.ibb.co/LvYjjw7/image.png">
+    <img src="https://i.ibb.co/LvYjjw7/image.png">
+  </a>
+</p>
+
+* ### 5.3 In `Nexcord Password` enter your Nexcord Account password
+* ### 5.4 In `Nexcord Port` enter `2022`:
+<p style="text-align: center;">
+  <a href="https://github.com/Almaziik777/Discord-Bot/assets/132609906/c8069107-6e81-4464-8071-6ad2b33e548c">
+    <img src="https://github.com/Almaziik777/Discord-Bot/assets/132609906/c8069107-6e81-4464-8071-6ad2b33e548c">
+  </a>
+</p>
+
+* ### 5.5 Wait until the upload completes, then proceed to the next step.
+
+## 3. Managing server:
+
+### 1. Click on Startup
+### 2. In Startup
+* ### 2.1 In `Git Repo Address` enter
 ```link
 https://github.com/Almaziik777/Discord-Bot
 ```
-* ### 4.2 Turn on `Auto Update`
-* ### 4.3 In `JS file` enter
+* ### 2.2 Turn on `Auto Update`
+* ### 2.3 In `JS file` enter
 ```js
 src/index.js
 ```
-### 5. Click on Console on the sidebar or at the top
-### 6. Click on Start, then wait until the end of loading
+### 3. Click on Console on the sidebar or at the top
+### 4. Click on Start, then wait until the end of loading
 
 
 ## <img src="https://cdn.discordapp.com/emojis/1036083490292244493.png" width="15px" height="15px">》Support Server
@@ -114,8 +125,13 @@ src/index.js
 > A: You will have to configure them via MongoDB or run the command below.
 
 ```bash
-npm run add-dev YOUR_Discord_ID
+npm run add-dev Your_Discord_ID
 ```
+> Q: How to get my Discord ID?
+>
+> A: [Solution](https://support.discord.com/hc/en-us/articles/206346498)
+
+<p align="center">*Crickets noise*</p>
 
 [version-shield]: https://img.shields.io/github/package-json/v/Almaziik777/Discord-Bot?style=for-the-badge
 [version-url]: https://github.com/brblacky/WaveMusic
