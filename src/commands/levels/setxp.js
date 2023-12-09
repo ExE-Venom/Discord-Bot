@@ -24,7 +24,6 @@ module.exports = async (client, interaction, args) => {
             user = new Schema({
                 userID: target.id,
                 guildID: interaction.guild.id,
-                username: target.username,
                 xp: 0,
                 level: 0,
                 lastUpdated: new Date()

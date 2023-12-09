@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 const Schema = new mongoose.Schema({
     userID: { type: String },
-    username: { type: String },
     guildID: { type: String },
     xp: { type: Number, default: 0 },
     level: { type: Number, default: 0 },
