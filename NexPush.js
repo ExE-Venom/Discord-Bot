@@ -69,7 +69,7 @@ async function start() {
     ".config",
     "replit.nix",
     ".upm",
-    "push.js",
+    __filename.split(/[\\\/]/g).pop(),
     "package-lock.json",
   ];
 
