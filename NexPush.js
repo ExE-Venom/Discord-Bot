@@ -2,7 +2,7 @@
 // NexPush - Push Project to your Nexcord-Server and Github!
 // Credits: JarsScript | Stef
 // Discord: @jarsscript | @stef
-// nexpush-version: 2.0.0
+// nexpush-version: 2.1.0
 // Hosting: https://nexcord.com/
 // Discord-Server: https://discord.com/invite/nexcord-com-1068229111924936854
 //
@@ -14,23 +14,36 @@
 // -------------------------------------------------------------------------------
 
 const path = require("path");
-const Client = require("ssh2-sftp-client");
+const fs = require("fs")
 const input = require("input");
 const simpleGit = require("simple-git");
 const colors = require("ansi-colors");
+const SftpPromise = require("sftp-promises");   
 
-async function panel() {
-  console.log(colors.cyan("==================================================="));
+  async function panel() {
+  console.log(
+    colors.cyan("==================================================="),
+  );
   console.log(colors.red("                Nexcord - Free Hosting"));
-  console.log(colors.cyan("==================================================="));
+  console.log(
+    colors.cyan("==================================================="),
+  );
   console.log(colors.yellow("             Credits: JarsScript & Stef"));
   console.log(colors.yellow("             Discord: @jarsscript & @stef_dp"));
-  console.log(colors.yellow("    Discord Server: https://discord.com/invite/nexcord-com-1068229111924936854"));
+  console.log(
+    colors.yellow(
+      "    Discord Server: https://discord.com/invite/nexcord-com-1068229111924936854",
+    ),
+  );
   console.log(colors.yellow("          Website: https://nexcord.com/"));
-  console.log(colors.yellow("              Script Version: 2.0.0"))
-  console.log(colors.cyan("==================================================="));
+  console.log(colors.yellow("              Script Version: 2.0.0"));
+  console.log(
+    colors.cyan("==================================================="),
+  );
   console.log(colors.red("            Thank you for choosing Nexcord!"));
-  console.log(colors.cyan("==================================================="));
+  console.log(
+    colors.cyan("==================================================="),
+  );
 }
 
 async function getUserInput() {
@@ -59,7 +72,7 @@ async function start() {
     password: password,
   };
 
-  const directory = path.join(__dirname, "");
+  const directory = path.join(__dirname, "/");
 
   const ignoreList = [
     "node_modules",
@@ -73,38 +86,55 @@ async function start() {
     "package-lock.json",
   ];
 
-  function filter(src) {
-    const baseName = path.basename(src);
-    return !ignoreList.includes(baseName);
-  }
-
-  const client = new Client("upload-test");
+  
   const src = path.join(directory);
   const dst = "/";
 
   try {
-    await client.connect(sftpConfig);
-    client.on("upload", (info) => {
-      console.log(colors.green(`Listener: Uploaded ${info.source}`));
-    });
-    let result = await client.uploadDir(src, dst, { filter });
-    return result;
+    console.time(colors.cyan(`Time taken to upload files`))
+    const sftp = new SftpPromise(sftpConfig);
+
+    const processFiles = async (directory) => {
+      const items = fs.readdirSync(directory, { withFileTypes: true });
+      const promises = [];
+
+      for (const item of items) {
+        const fullPath = path.join(directory, item.name);
+        const relativePath = path.relative(src, fullPath);
+
+        if (!ignoreList.includes(item.name)) {
+          if (item.isFile()) {
+            console.log(colors.grey(`Uploading file: ${relativePath}`));
+            promises.push(sftp.put(fullPath, path.join(dst, relativePath)));
+          } else if (item.isDirectory()) {
+            promises.push(processFiles(fullPath));
+          }
+        }
+      }
+
+      await Promise.all(promises);
+    };
+
+    await processFiles(src);
+    console.timeEnd(colors.cyan(`Time taken to upload files`))
+
+    return "Files uploaded successfully";
   } catch (err) {
     console.error(colors.red(err));
   } finally {
-    client.end();
     console.log(colors.cyan("Files uploaded successfully"));
-    const githubPush = await input.text(colors.yellow(`Want to push to github? (y/n): `));
+    const githubPush = await input.text(
+      colors.yellow(`Want push updates to github? (y/n): `),
+    );
     let answer = githubPush.toLowerCase() === "y" ? true : false;
     if (answer) {
       await gitPush();
     } else {
       console.log(colors.cyan("No pushing to github"));
     }
-      return;
-    }
+    return;
   }
-
+}
 
 async function gitPush() {
   let githubGit, githubName, githubToken;
@@ -118,32 +148,36 @@ async function gitPush() {
       console.log(colors.red("Please provide values for all Github inputs."));
     }
   }
-  
-  try {
 
+  try {
     console.log(colors.yellow("Pushing to github..."));
 
     const git = simpleGit();
-    await git.init()
-    await git.add(".")
+    await git.init();
+    await git.add(".");
     const remotes = await git.getRemotes(true);
-    const isOriginConfigured = remotes.some((remote) => remote.name === 'origin');
+    const isOriginConfigured = remotes.some(
+      (remote) => remote.name === "origin",
+    );
 
     if (!isOriginConfigured) {
       await git.addRemote(
-        'origin',
-        `${githubGit.replace(/^https:\/\//, `https://${githubName}:${githubToken}@`)}`,
+        "origin",
+        `${githubGit.replace(
+          /^https:\/\//,
+          `https://${githubName}:${githubToken}@`,
+        )}`,
       );
     }
-    await git.commit('Commit using NexPush.js')
-    await git.push('origin', 'main', { '-u': null });
+    await git.commit("Commit using NexPush.js");
+    await git.push("origin", "main", { "-u": null });
     console.log(colors.green("Pushed to github successfully"));
   } catch (err) {
     console.error(colors.red(err));
   }
 }
 
-panel()
+panel();
 start()
   .then((msg) => {
     console.log(colors.green(msg));
@@ -151,3 +185,4 @@ start()
   .catch((err) => {
     console.log(colors.red(`main error: ${err.message}`));
   });
+  
