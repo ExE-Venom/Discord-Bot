@@ -22,9 +22,7 @@ module.exports = async (client, oldMember, newMember) => {
     var nstring = "";
     if (addedRoles.size > 0) addedRoles.forEach(element => { nstring += "<@&" + element + "> " });
 
-    // Проверяем изменение никнейма
     if (oldMember.displayName !== newMember.displayName) {
-        // Если никнейм изменился, отправляем сообщение в логи
         const logsChannel = await client.getLogs(newMember.guild.id);
         if (logsChannel) {
             client.embed({
@@ -34,9 +32,7 @@ module.exports = async (client, oldMember, newMember) => {
         }
     }
 
-    // Проверяем изменение аватара
     if (oldMember.user.avatarURL() !== newMember.user.avatarURL()) {
-        // Если аватар изменился, отправляем сообщение в логи
         const logsChannel = await client.getLogs(newMember.guild.id);
         if (logsChannel) {
             client.embed({

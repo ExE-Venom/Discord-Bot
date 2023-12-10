@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const chalk = require('chalk');
 require('dotenv').config('./.env');
 const axios = require('axios');
+const moment = require('moment-timezone');
 // Check if is up to date
 const { version } = require('.././package.json');
 axios.get('https://api.github.com/repos/CorwinDev/Discord-Bot/releases/latest').then(res => {
@@ -43,8 +44,9 @@ if (process.env.TOPGG_TOKEN) {
     const { AutoPoster } = require('topgg-autoposter');
     AutoPoster(process.env.TOPGG_TOKEN, manager);
 }
+const timestamp = moment().tz('Europe/Moscow').format('DD.MM.YYYY HH:mm');
 console.clear();
-console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), (chalk.green(`Starting up`)), (chalk.white(`...`)))
+console.log(chalk.red(chalk.bold(`[${timestamp}]`)), (chalk.blue(chalk.bold(`System`))), (chalk.white(`>>`)), (chalk.green(`Starting up`)), (chalk.white(`...`)))
 console.log(`\u001b[0m`)
 console.log(chalk.red(`© Almaz Team | 2022 - ${new Date().getFullYear()}`))
 console.log(chalk.red(`All rights reserved`))

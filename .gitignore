@@ -1,4 +1,4 @@
+
 .env
-node_modules
-src/.vs
 src/config/webhooks.json
+src/events/client/guildCreate.js
