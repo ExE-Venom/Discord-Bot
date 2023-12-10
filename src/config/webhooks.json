@@ -1,62 +1,62 @@
 {
     "startLogs": {
-        "id": "1169952193395298315",
-        "token": "hWQZFWZ5GLU1dxYvOLquX2ARqyFDEr6PXkokg_rZx5y3Jddqnp1rDkFEexksJYLJkhVc"
+        "id": "",
+        "token": ""
     },
     "shardLogs": {
-        "id": "1169952193395298315",
-        "token": "hWQZFWZ5GLU1dxYvOLquX2ARqyFDEr6PXkokg_rZx5y3Jddqnp1rDkFEexksJYLJkhVc"
+        "id": "",
+        "token": ""
     },
     "errorLogs": {
-        "id": "1170036871427002418",
-        "token": "CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f"
+        "id": "",
+        "token": ""
     },
     "dmLogs": {
-        "id": "1170036871427002418",
-        "token": "CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f"
+        "id": "",
+        "token": ""
     },
     "voiceLogs": {
-        "id": "1170036871427002418",
-        "token": "CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f"
+        "id": "",
+        "token": ""
     },
     "serverLogs": {
-        "id": "1170036871427002418",
-        "token": "CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f"
+        "id": "",
+        "token": ""
     },
     "serverLogs2": {
-        "id": "1170036871427002418",
-        "token": "CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f"
+        "id": "",
+        "token": ""
     },
     "commandLogs": {
-        "id": "1170036871427002418",
-        "token": "CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f"
+        "id": "",
+        "token": ""
     },
     "consoleLogs": {
-        "id": "1170036871427002418",
-        "token": "CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f"
+        "id": "",
+        "token": ""
     },
     "warnLogs": {
-        "id": "1170036871427002418",
-        "token": "CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f"
+        "id": "",
+        "token": ""
     },
     "voiceErrorLogs": {
-        "id": "1170036871427002418",
-        "token": "CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f"
+        "id": "",
+        "token": ""
     },
     "creditLogs": {
-        "id": "1170036871427002418",
-        "token": "CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f"
+        "id": "",
+        "token": ""
     },
     "evalLogs": {
-        "id": "1169952193395298315",
-        "token": "hWQZFWZ5GLU1dxYvOLquX2ARqyFDEr6PXkokg_rZx5y3Jddqnp1rDkFEexksJYLJkhVc"
+        "id": "",
+        "token": ""
     },
     "interactionLogs": {
-        "id": "1170036871427002418",
-        "token": "CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f"
+        "id": "",
+        "token": ""
     },
     "bugReportLogs": {
-        "id": "1170052069772759163",
-        "token": "sHki7iooVOwnnxsjAlT7VmaxbM8lbMg83quhLlYP_ub7ne_bx91-03QMboQxfoe9Ez3n"
+        "id": "",
+        "token": ""
     }
 }
