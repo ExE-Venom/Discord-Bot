@@ -68,6 +68,7 @@
     "parse-ms": "^2.1.0",
     "path": "^0.12.7",
     "popcat-wrapper": "^1.5.4",
+    "sftp-promises": "^1.8.0",
     "simple-git": "^3.21.0",
     "sourcebin": "^5.0.0",
     "ssh2-sftp-client": "^9.1.0",

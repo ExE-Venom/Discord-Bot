@@ -1,8 +1,8 @@
 // -------------------------------------------------------------------------------
 // NexPush - Push Project to your Nexcord-Server and Github!
 // Credits: JarsScript | Stef
-// Discord: @jarsscript | @stef
-// nexpush-version: 2.1.0
+// Discord: @jarsscript | @stef_dp
+// nexpush-version: 2.1.1
 // Hosting: https://nexcord.com/
 // Discord-Server: https://discord.com/invite/nexcord-com-1068229111924936854
 //
@@ -36,7 +36,7 @@ const SftpPromise = require("sftp-promises");
     ),
   );
   console.log(colors.yellow("          Website: https://nexcord.com/"));
-  console.log(colors.yellow("              Script Version: 2.0.0"));
+  console.log(colors.yellow("              Script Version: 2.1.1"));
   console.log(
     colors.cyan("==================================================="),
   );
@@ -86,7 +86,7 @@ async function start() {
     "package-lock.json",
   ];
 
-  
+
   const src = path.join(directory);
   const dst = "/";
 
@@ -105,7 +105,7 @@ async function start() {
         if (!ignoreList.includes(item.name)) {
           if (item.isFile()) {
             console.log(colors.grey(`Uploading file: ${relativePath}`));
-            promises.push(sftp.put(fullPath, path.join(dst, relativePath)));
+            promises.push(sftp.put(fullPath, path.join(dst, relativePath).replace(/\\/g, "/")));
           } else if (item.isDirectory()) {
             promises.push(processFiles(fullPath));
           }
@@ -185,4 +185,3 @@ start()
   .catch((err) => {
     console.log(colors.red(`main error: ${err.message}`));
   });
-  
