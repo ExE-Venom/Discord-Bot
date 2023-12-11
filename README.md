@@ -95,7 +95,7 @@ node NexPush.js
   </a>
 </p>
 
-* ### 5.5 Wait until the upload completes, then proceed to the next step.
+* ### 5.5 Wait until the uploading completes, in `Want push updates to github? (y/n):` type `n`, then proceed to the next step.
 
 ## 3. Managing server:
 
