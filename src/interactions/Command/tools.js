@@ -86,6 +86,12 @@ module.exports = {
         )
         .addSubcommand(subcommand =>
             subcommand
+                .setName('sourcebin')
+                .setDescription('Upload code to source bin')
+                .addStringOption(option => option.setName('language').setDescription('The language of your code').setRequired(true))
+        )
+        .addSubcommand(subcommand =>
+            subcommand
                 .setName('url')
                 .setDescription('Make a shortend url')
                 .addStringOption(option => option.setName('site').setDescription('The link to the website').setRequired(true))
