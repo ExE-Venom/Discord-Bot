@@ -5,7 +5,7 @@ module.exports = async (client, interaction, args) => {
 
     if (interaction.guild.members.me.voice.channel && interaction.member.voice.channel.id !== interaction.guild.members.me.voice.channel.id) return client.errNormal({ error: `You are not in the same voice channel!`, type: 'editreply' }, interaction);
 
-    client.soundboard(interaction.guild.id, interaction, "https://www.myinstants.com/media/sounds/music2_IJadXD4.mp3");
+    client.soundboard(interaction.guild.id, interaction, "https://www.myinstants.com/media/sounds/battotai-drip-remix.mp3");
 
-    client.succNormal({ text: "Soundboard started! Playing **nyancat**", type: 'editreply' }, interaction);
+    client.succNormal({ text: "Soundboard started! Playing **kamikaze** song", type: 'editreply' }, interaction);
 };

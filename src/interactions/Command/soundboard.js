@@ -167,13 +167,23 @@ module.exports = {
                 )
                 .addSubcommand((subcommand) =>
                     subcommand
+                        .setName('fnafbeatbox')
+                        .setDescription('Play the fnaf beatbox'),
+                )
+                .addSubcommand((subcommand) =>
+                    subcommand
+                        .setName('theodoremarch')
+                        .setDescription('Play the fnaf 1 musicbox'),
+                )                            
+                .addSubcommand((subcommand) =>
+                    subcommand
                         .setName('musicbox')
-                        .setDescription('Play the freddy fazbear sound'),
+                        .setDescription('Play the fnaf 2 musicbox'),
                 )
                 .addSubcommand((subcommand) =>
                     subcommand
                         .setName('freddygosling')
-                        .setDescription('Play the freddy fazbear sound'),
+                        .setDescription('Play the Freddy Fazbear X Rayan Golsing sound'),
                 )
                 .addSubcommand((subcommand) =>
                     subcommand
@@ -187,11 +197,6 @@ module.exports = {
                 )
                 .addSubcommand((subcommand) =>
                     subcommand
-                        .setName('lambo')
-                        .setDescription('Play the lambo sound'),
-                )
-                .addSubcommand((subcommand) =>
-                    subcommand
                         .setName('lospenguinos')
                         .setDescription('Play the los penguinos sound'),
                 )  
@@ -202,14 +207,9 @@ module.exports = {
                 )
                 .addSubcommand((subcommand) =>
                     subcommand
-                        .setName('moaning')
-                        .setDescription('Play themoaning sound'),
-                )
-                .addSubcommand((subcommand) =>
-                    subcommand
-                        .setName('nani')
-                        .setDescription('Play the nani sound'),
-                )
+                        .setName('kamikaze')
+                        .setDescription('Play the kamikaze song'),
+                )                            
                 .addSubcommand((subcommand) =>
                     subcommand
                         .setName('nyancat')
@@ -217,18 +217,8 @@ module.exports = {
                 )
                 .addSubcommand((subcommand) =>
                     subcommand
-                        .setName('ohh')
-                        .setDescription('Play the ohh sound'),
-                )
-                .addSubcommand((subcommand) =>
-                    subcommand
                         .setName('rickroll')
                         .setDescription('Play the rickroll sound'),
-                )
-                .addSubcommand((subcommand) =>
-                    subcommand
-                        .setName('rimshot')
-                        .setDescription('Play the rimshot sound'),
                 )
                 .addSubcommand((subcommand) =>
                     subcommand
