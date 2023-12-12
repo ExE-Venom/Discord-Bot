@@ -131,7 +131,7 @@ npm run add-dev Your_Discord_ID
 >
 > A: [Solution](https://support.discord.com/hc/en-us/articles/206346498)
 
-<p align="center">*Crickets noise*</p>
+<h1 align="center"><width="30px"> *Crickets noise* <width="30px"></h1>
 
 [version-shield]: https://img.shields.io/github/package-json/v/Almaziik777/Discord-Bot?style=for-the-badge
 [version-url]: https://github.com/brblacky/WaveMusic
