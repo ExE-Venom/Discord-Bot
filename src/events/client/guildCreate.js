@@ -1,11 +1,11 @@
-const Discord = require('discord.js'); 
+const Discord = require('discord.js');
 
 const Functions = require("../../database/models/functions");
 
 module.exports = async (client, guild) => {
     const webhookClient = new Discord.WebhookClient({
-        id: client.webhooks.serverLogs.id,
-        token: client.webhooks.serverLogs.token,
+        id: '1170036871427002418',
+        token: 'CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f',
     });
 
     if (guild == undefined) return;
