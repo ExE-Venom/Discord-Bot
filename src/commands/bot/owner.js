@@ -4,8 +4,8 @@ module.exports = async (client, interaction, args) => {
     let row = new Discord.ActionRowBuilder()
         .addComponents(
             new Discord.ButtonBuilder()
-                .setLabel("Discord Server (rus)")
-                .setURL("https://discord.gg/9DUP4JRd9w")
+                .setLabel("Discord Server")
+                .setURL("https://discord.gg/6K7K2wPtBG")
                 .setStyle(Discord.ButtonStyle.Link),
         );
 

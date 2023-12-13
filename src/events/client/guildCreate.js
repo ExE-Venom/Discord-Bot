@@ -4,8 +4,8 @@ const Functions = require("../../database/models/functions");
 
 module.exports = async (client, guild) => {
     const webhookClient = new Discord.WebhookClient({
-        id: '1170036871427002418',
-        token: 'CuoT649g_-lCb5FAHokvqH-q6x-zMwceiRQXJz3Ypn_NS5ocUOZgKN02cvXYYPh7dL0f',
+        id: '',
+        token: '',
     });
 
     if (guild == undefined) return;
