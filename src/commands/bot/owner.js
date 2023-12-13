@@ -29,8 +29,8 @@ module.exports = async (client, interaction, args) => {
             inline: true,
         },
         {
-            name: "🌐┆Discord Server (rus)",
-            value: `**https://discord.gg/9DUP4JRd9w**`,
+            name: "🌐┆Discord Server",
+            value: `**https://discord.gg/6K7K2wPtBG**`,
             inline: true,
         }],
         components: [row],
