@@ -11,7 +11,7 @@
   <a href="<https://discord.com/users/772520466169593857>"> <img src="https://discord.c99.nl/widget/theme-1/772520466169593857.png" alt="bot">
 
 <p align="center">
-  <a href="https://github.com/Almaziik777/Discord-Bot">
+  <a href="https://github.com/AlmaziikDev/Discord-Bot">
     <img src="https://i.ibb.co/rk7jRkf/Almaz-BOT-Avatar-2-round.png" alt="Almaz-Icon" width="200" height="200">
 
   <h3 align="center">Almaz</h3>
@@ -20,9 +20,9 @@
     Almaz is an updated version of <a href="https://github.com/DotwoodMedia/Dbot">Dbot</a>, an advanced Discord multipurpose bot containing more than 400 commands.<br> It can do Moderation, Tickets, Games, Giveaways, Customisation, Economy, Leveling, Invites, Messages, Utilities, Suggestions, Server Stats etc.<br> Unfortunately the owners stopped at the peak and decided to put the source online of which I made an updated version.
     <br />
     <br />
-    <a href="https://github.com/almaziik777/discord-bot/issues">Report Bug</a>
+    <a href="https://github.com/AlmaziikDev/Discord-Bot/issues">Report Bug</a>
     ·
-    <a href="https://github.com/almaziik777/discord-bot/issues">Request Feature</a>
+    <a href="https://github.com/AlmaziikDev/Discord-Bot/issues">Request Feature</a>
   </p>
 </p>
 
@@ -40,7 +40,7 @@
 <br />
 
 <p style="text-align: center;">
-  <a href="https://github.com/almaziik777/discord-bot" style="display: flex; justify-content: center; align-items: center;">
+  <a href="https://github.com/AlmaziikDev/Discord-Bot" style="display: flex; justify-content: center; align-items: center;">
     <img src="https://i.ibb.co/3FVPMrR/image.png" style="max-width: 100px; margin: 0 10px;">
   </a>
 </p>
@@ -70,7 +70,7 @@
 ## 2. Uploading files:
 ### 1. Clone the repo by running:
 ```bash
-git clone https://github.com/Almaziik777/Discord-Bot.git
+git clone https://github.com/AlmaziikDev/Discord-Bot.git
 ```
 ### 2. Go to the [Servers](https://my.nexcord.com/servers)
 ### 3. Click on Manage
@@ -90,8 +90,8 @@ node NexPush.js
 * ### 5.3 In `Nexcord Password` enter your Nexcord Account password
 * ### 5.4 In `Nexcord Port` enter `2022`:
 <p style="text-align: center;">
-  <a href="https://github.com/Almaziik777/Discord-Bot/assets/132609906/c8069107-6e81-4464-8071-6ad2b33e548c">
-    <img src="https://github.com/Almaziik777/Discord-Bot/assets/132609906/c8069107-6e81-4464-8071-6ad2b33e548c">
+  <a href="https://github.com/AlmaziikDev/Discord-Bot/assets/132609906/c8069107-6e81-4464-8071-6ad2b33e548c">
+    <img src="https://github.com/AlmaziikDev/Discord-Bot/assets/132609906/c8069107-6e81-4464-8071-6ad2b33e548c">
   </a>
 </p>
 
@@ -102,8 +102,8 @@ node NexPush.js
 ### 1. Click on Startup
 ### 2. In Startup
 * ### 2.1 In `Git Repo Address` enter
-```link
-https://github.com/Almaziik777/Discord-Bot
+```git
+https://github.com/AlmaziikDev/Discord-Bot
 ```
 * ### 2.2 Turn on `Auto Update`
 * ### 2.3 In `JS file` enter
@@ -135,15 +135,15 @@ npm run add-dev Your_Discord_ID
 #
 <h1 align="center"><width="30px"> *Crickets noise* <width="30px"></h1>
 
-[version-shield]: https://img.shields.io/github/package-json/v/Almaziik777/Discord-Bot?style=for-the-badge
+[version-shield]: https://img.shields.io/github/package-json/v/AlmaziikDev/Discord-Bot?style=for-the-badge
 [version-url]: https://github.com/brblacky/WaveMusic
-[contributors-shield]: https://img.shields.io/github/contributors/Almaziik777/Discord-Bot.svg?style=for-the-badge
-[contributors-url]: https://github.com/Almaziik777/Discord-Bot/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Almaziik777/Discord-Bot.svg?style=for-the-badge
-[forks-url]: https://github.com/Almaziik777/Discord-Bot/network/members
-[stars-shield]: https://img.shields.io/github/stars/Almaziik777/Discord-Bot.svg?style=for-the-badge
-[stars-url]: https://github.com/Almaziik777/Discord-Bot/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Almaziik777/Discord-Bot.svg?style=for-the-badge
-[issues-url]: https://github.com/Almaziik777/Discord-Bot/issues
-[license-shield]: https://img.shields.io/github/license/Almaziik777/Discord-Bot.svg?style=for-the-badge
-[license-url]: https://github.com/Almaziik777/Discord-Bot/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/AlmaziikDev/Discord-Bot.svg?style=for-the-badge
+[contributors-url]: https://github.com/AlmaziikDev/Discord-Bot/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/AlmaziikDev/Discord-Bot.svg?style=for-the-badge
+[forks-url]: https://github.com/AlmaziikDev/Discord-Bot/network/members
+[stars-shield]: https://img.shields.io/github/stars/AlmaziikDev/Discord-Bot.svg?style=for-the-badge
+[stars-url]: https://github.com/AlmaziikDev/Discord-Bot/stargazers
+[issues-shield]: https://img.shields.io/github/issues/AlmaziikDev/Discord-Bot.svg?style=for-the-badge
+[issues-url]: https://github.com/AlmaziikDev/Discord-Bot/issues
+[license-shield]: https://img.shields.io/github/license/AlmaziikDev/Discord-Bot.svg?style=for-the-badge
+[license-url]: https://github.com/AlmaziikDev/Discord-Bot/blob/master/LICENSE
