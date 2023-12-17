@@ -56,15 +56,20 @@ module.exports = async (client, interaction, args) => {
                 inline: true
             },
             {
-                name: `${client.emotes.normal.clock}┆Ends at`,
-                value: `<t:${((Date.now() / 1000) + (track.duration / 1000)).toFixed(0)}:f>`,
+                name: `${client.emotes.normal.clock}┆Duration`,
+                value: `${durationMinutes}m ${durationSeconds}s`,
                 inline: true
-            },
+            },            
             {
                 name: `🎬┆Author`,
                 value: `${track.author}`,
                 inline: true
-            }
+            },
+            {
+                name: `${client.emotes.normal.clock}┆Ends at`,
+                value: `<t:${((Date.now() / 1000) + (track.duration / 1000)).toFixed(0)}:f>`,
+                inline: true
+            },
         ],
         components: [row],
         type: 'editreply'

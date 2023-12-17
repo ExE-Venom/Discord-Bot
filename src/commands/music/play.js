@@ -72,6 +72,8 @@ module.exports = async (client, interaction, args) => {
 
         case 'TRACK_LOADED': {
             const track = res.tracks[0];
+            const durationSeconds = Math.floor((track.duration / 1000) % 60);
+            const durationMinutes = Math.floor((track.duration / (1000 * 60)) % 60);
             await player.queue.add(track);
 
             if (!player.playing && !player.paused) {
@@ -90,13 +92,18 @@ module.exports = async (client, interaction, args) => {
                             inline: true
                         },
                         {
-                            name: `${client.emotes.normal.clock}┆Ends at`,
-                            value: `<t:${((Date.now() / 1000) + (track.duration / 1000)).toFixed(0)}:f>`,
+                            name: `${client.emotes.normal.clock}┆Duration`,
+                            value: `${durationMinutes}m ${durationSeconds}s`,
                             inline: true
                         },
                         {
                             name: `🎬┆Author`,
                             value: `${track.author}`,
+                            inline: true
+                        },
+                        {
+                            name: `${client.emotes.normal.clock}┆Ends at`,
+                            value: `<t:${((Date.now() / 1000) + (track.duration / 1000)).toFixed(0)}:f>`,
                             inline: true
                         }
                     ],
@@ -204,6 +211,8 @@ module.exports = async (client, interaction, args) => {
             }, interaction)
 
             const track = res.tracks[index];
+            const durationSeconds = Math.floor((track.duration / 1000) % 60);
+            const durationMinutes = Math.floor((track.duration / (1000 * 60)) % 60);
             player.queue.add(track);
 
             if (!player.playing && !player.paused) {
@@ -222,13 +231,18 @@ module.exports = async (client, interaction, args) => {
                             inline: true
                         },
                         {
-                            name: `${client.emotes.normal.clock}┆Ends at`,
-                            value: `<t:${((Date.now() / 1000) + (track.duration / 1000)).toFixed(0)}:f>`,
+                            name: `${client.emotes.normal.clock}┆Duration`,
+                            value: `${durationMinutes}m ${durationSeconds}s`,
                             inline: true
                         },
                         {
                             name: `🎬┆Author`,
                             value: `${track.author}`,
+                            inline: true
+                        },
+                        {
+                            name: `${client.emotes.normal.clock}┆Ends at`,
+                            value: `<t:${((Date.now() / 1000) + (track.duration / 1000)).toFixed(0)}:f>`,
                             inline: true
                         }
                     ],

@@ -35,13 +35,22 @@ module.exports = {
         )
         .addSubcommand(subcommand =>
             subcommand
-                .setName('clear')
+                .setName('clearqueue')
                 .setDescription('Delete the music queue')
         )
         .addSubcommand(subcommand =>
             subcommand
-                .setName('loop')
-                .setDescription('Loop the music')
+                .setName('repeat')
+                .setDescription('Repeat the music')
+                .addStringOption(option =>
+                    option.setName('mode')
+                        .setDescription('The mode of the repeat')
+                        .setRequired(true)
+                        .addChoices(
+                            { name: 'Track', value: 'track' },
+                            { name: 'Queue', value: 'queue' }
+                        )
+                )
         )
         .addSubcommand(subcommand =>
             subcommand

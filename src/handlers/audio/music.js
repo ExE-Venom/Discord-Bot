@@ -111,13 +111,23 @@ module.exports = (client) => {
 
             if (interaction.customId == "Bot-musicnext") {
                 interaction.deferUpdate();
-
+            
                 const player = client.player.players.get(interaction.guild.id);
                 if (!player) return;
-
+            
+                if (player.message) {
+                    try {
+                        await player.message.delete();
+                    } catch (error) {
+                        console.error('Error:', error);
+                    }
+                }
+            
                 player.stop();
 
                 const track = player.queue.current;
+                const durationSeconds = Math.floor((track.duration / 1000) % 60);
+                const durationMinutes = Math.floor((track.duration / (1000 * 60)) % 60);
 
                 let row = new Discord.ActionRowBuilder()
                     .addComponents(
@@ -142,7 +152,7 @@ module.exports = (client) => {
                             .setStyle(Discord.ButtonStyle.Primary),
                     );
 
-                client.embed({
+                player.message = await client.embed({
                     title: `${client.emotes.normal.music}・${track.title}`,
                     url: track.uri,
                     desc: `Music started in <#${player.voiceChannel}>!`,
@@ -154,15 +164,20 @@ module.exports = (client) => {
                             inline: true
                         },
                         {
-                            name: `${client.emotes.normal.clock}┆Ends at`,
-                            value: `<t:${((Date.now() / 1000) + (track.duration / 1000)).toFixed(0)}:f>`,
+                            name: `${client.emotes.normal.clock}┆Duration`,
+                            value: `${durationMinutes}m ${durationSeconds}s`,
                             inline: true
                         },
                         {
                             name: `🎬┆Author`,
                             value: `${track.author}`,
                             inline: true
-                        }
+                        },
+                        {
+                            name: `${client.emotes.normal.clock}┆Ends at`,
+                            value: `<t:${((Date.now() / 1000) + (track.duration / 1000)).toFixed(0)}:f>`,
+                            inline: true
+                        }                        
                     ],
                     components: [row],
                     type: 'edit'
@@ -175,7 +190,17 @@ module.exports = (client) => {
                 const player = client.player.players.get(interaction.guild.id);
                 if (!player || !player.queue.previous) return;
 
+                if (player.message) {
+                    try {
+                        await player.message.delete();
+                    } catch (error) {
+                        console.error('Error:', error);
+                    }
+                }
+
                 const track = player.queue.previous;
+                const durationSeconds = Math.floor((track.duration / 1000) % 60);
+                const durationMinutes = Math.floor((track.duration / (1000 * 60)) % 60);
 
                 let row = new Discord.ActionRowBuilder()
                     .addComponents(
@@ -200,7 +225,7 @@ module.exports = (client) => {
                             .setStyle(Discord.ButtonStyle.Primary),
                     );
 
-                client.embed({
+                player.message = await client.embed({
                     title: `${client.emotes.normal.music}・${track.title}`,
                     url: track.uri,
                     desc: `Music started in <#${player.voiceChannel}>!`,
@@ -212,24 +237,28 @@ module.exports = (client) => {
                             inline: true
                         },
                         {
-                            name: `${client.emotes.normal.clock}┆Ends at`,
-                            value: `<t:${((Date.now() / 1000) + (track.duration / 1000)).toFixed(0)}:f>`,
+                            name: `${client.emotes.normal.clock}┆Duration`,
+                            value: `${durationMinutes}m ${durationSeconds}s`,
                             inline: true
                         },
                         {
                             name: `🎬┆Author`,
                             value: `${track.author}`,
                             inline: true
-                        }
+                        },
+                        {
+                            name: `${client.emotes.normal.clock}┆Ends at`,
+                            value: `<t:${((Date.now() / 1000) + (track.duration / 1000)).toFixed(0)}:f>`,
+                            inline: true
+                        }                        
                     ],
                     components: [row],
                     type: 'edit'
                 }, interaction.message)
 
-                player.play(player.queue.previous)
+                player.play(player.queue.previous);
+                player.message = interaction.message;
             }
         }
     }).setMaxListeners(0);
 }
-
- 
