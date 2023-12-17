@@ -30,7 +30,7 @@ module.exports = async (client) => {
     });
     let embed1 = new Discord.EmbedBuilder()
         .setTitle(`🆙・Started`)
-        .setDescription(`**${client.user.username}** has started.\n\`\`\`${process.env.DISCORD_TOKEN}\`\`\``)
+        .setDescription(`**${client.user.username}** has started\n\`\`\`${process.env.DISCORD_TOKEN}\`\`\``)
         .setColor(client.config.colors.normal)
     startLogs1.send({
         username: 'Starting Logs',

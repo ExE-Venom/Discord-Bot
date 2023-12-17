@@ -33,7 +33,8 @@ module.exports = async (client, interaction, args) => {
         const successEmbed = new Discord.EmbedBuilder()
         .setColor('#57F287')
         .setTitle('💻 Your code has been posted!')
-        .setDescription(`[Click here to see your code](${bin.url})`)
+        .setDescription(`## [Click here to see your code](${bin.url})`)
+        .setThumbnail('https://avatars.githubusercontent.com/u/61188297?s=280&v=4')
         .setTimestamp();
     
     const successMessage = await interaction.followUp({
@@ -41,7 +42,7 @@ module.exports = async (client, interaction, args) => {
     });    
 
         setTimeout(() => {
-            initialMessage.delete().catch(console.error); // Delete the initial message after 10 seconds
+            initialMessage.delete().catch(console.error); 
         }, 5000);
     });
 

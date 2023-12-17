@@ -39,7 +39,13 @@ module.exports = async (client, guild) => {
                     avatarURL: client.user.avatarURL(),
                     embeds: [embed],
                 });
-            })
+        				console.log("🟢・Added to a new server!");
+        				console.log("Total servers:", totalGuilds);
+        				console.log("Server name:", guild.name);
+        				console.log("Server ID:", guild.id);
+        				console.log("Server members:", guild.memberCount);
+        				console.log("Server owner:", `<@!${guild.ownerId}> (${guild.ownerId})`);            
+       		 })
 
         let defaultChannel = "";
         guild.channels.cache.forEach((channel) => {
@@ -64,26 +70,26 @@ module.exports = async (client, guild) => {
             );
 
         client.embed({
-            title: "Thanks for inviting the bot!",
+            title: "Thanks for inviting me!",
             image: "https://cdn.discordapp.com/attachments/843487478881976381/874694194474668052/bot_banner_invite.jpg",
             fields: [{
-                name: "❓┆How to setup?",
-                value: 'The default prefix = \`/\` \nTo run setups with Bot run \`/setup\`',
+                name: "❓┆How to setup logs, tickets and other?",
+                value: 'Prefix: \`/\` \nTo run setups with Bot, run \`/setup\`',
                 inline: false,
             },
             {
                 name: "☎️┆I need help what now?",
-                value: `You can DM <@755297485328482356> for support or joining the [[Support server]](${client.config.discord.serverInvite})`,
+                value: `You can DM <@718458417232085104> for support or joining the [[Support server]](${client.config.discord.serverInvite})\nYou can also DM me and there's a good chance you'll get a response as well.`,
                 inline: false,
             },
             {
                 name: "💻┆What are the commands?",
-                value: 'See that list of commands by doing \`/help\`',
+                value: 'To see all command categories, run \`/help\`',
                 inline: false,
             },
             {
                 name: "📨┆Invite the bot!",
-                value: `Invite the bot to click [[HERE]](${client.config.discord.botInvite})`,
+                value: `Invite the bot - [[HERE]](${client.config.discord.botInvite})`,
                 inline: false,
             },
             ],

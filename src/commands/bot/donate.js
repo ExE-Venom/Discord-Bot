@@ -5,7 +5,7 @@ module.exports = async (client, interaction, args) => {
         .addComponents(
             new Discord.ButtonBuilder()
                 .setLabel("Discord Server")
-                .setURL("https://discord.gg/6K7K2wPtBG")
+                .setURL("https://discord.gg/6K7K2wPtBG") 
                 .setStyle(Discord.ButtonStyle.Link),
         );
 
@@ -18,5 +18,3 @@ module.exports = async (client, interaction, args) => {
         type: 'editreply'
     }, interaction)
 }
-
- 
