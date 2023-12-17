@@ -38,7 +38,8 @@ module.exports = {
                 .setName('clearqueue')
                 .setDescription('Delete the music queue')
         )
-        /* .addSubcommand(subcommand =>
+        // /*
+        .addSubcommand(subcommand =>
             subcommand
                 .setName('repeat')
                 .setDescription('Repeat the music')
@@ -52,7 +53,7 @@ module.exports = {
                         )
                 )
         )
-        */
+        // */
         .addSubcommand(subcommand =>
             subcommand
                 .setName('loop')
