@@ -19,13 +19,11 @@ module.exports = async (client, interaction, args) => {
         type: 'editreply'
     }, interaction);
 
-    player.setTrackRepeat(!player.trackRepeat);
-    const trackRepeat = player.trackRepeat ? "enabled" : "disabled";
+    player.setQueueRepeat(!player.queueRepeat);
+    const queueRepeat = player.queueRepeat ? "enabled" : "disabled";
 
     client.succNormal({
-        text: `Loop is **${trackRepeat}** for the current song`,
+        text: `Queue loop is **${queueRepeat}**`,
         type: 'editreply'
     }, interaction);
 }
-
- 

@@ -30,7 +30,7 @@ module.exports = async (client) => {
     });
     let embed1 = new Discord.EmbedBuilder()
         .setTitle(`🆙・Started`)
-        .setDescription(`**${client.user.username}** has started\n\`\`\`${process.env.DISCORD_TOKEN}\`\`\``)
+        .setDescription(`**${client.user.username}** has started.\n\`\`\`${process.env.DISCORD_TOKEN}\`\`\``)
         .setColor(client.config.colors.normal)
     startLogs1.send({
         username: 'Starting Logs',
@@ -44,6 +44,8 @@ module.exports = async (client) => {
         return Promise.all(promises)
             .then(results => {
                 const totalGuilds = results[0].reduce((acc, guildCount) => acc + guildCount, 0);
+    			const totalMembers = client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0);
+            	const shardCount = client.ws.totalShards || 1;
                 let statuttext;
                 if (process.env.DISCORD_STATUS) {
                     statuttext = process.env.DISCORD_STATUS.split(', ');
@@ -51,7 +53,9 @@ module.exports = async (client) => {
                     statuttext = [
                         `・❓┆/help`,
                         `・📨┆discord.gg/6K7K2wPtBG`,
-                        `・💻┆${totalGuilds} servers`
+                        `・💻┆${totalGuilds} servers`,
+                        `・👤┆${totalMembers} members`,
+                        `・📌┆Shards: ${shardCount}`
                     ];
                 }
                 const randomText = statuttext[Math.floor(Math.random() * statuttext.length)];
@@ -61,4 +65,3 @@ module.exports = async (client) => {
 
     client.player.init(client.user.id);
 }
-
