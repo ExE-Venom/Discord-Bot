@@ -37,31 +37,37 @@ module.exports = async (client) => {
         embeds: [embed1],
     });
 
-    setInterval(async function () {
-        const promises = [
-            client.shard.fetchClientValues('guilds.cache.size'),
-        ];
-        return Promise.all(promises)
-            .then(results => {
-                const totalGuilds = results[0].reduce((acc, guildCount) => acc + guildCount, 0);
-    			const totalMembers = client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0);
-            	const shardCount = client.ws.totalShards || 1;
-                let statuttext;
-                if (process.env.DISCORD_STATUS) {
-                    statuttext = process.env.DISCORD_STATUS.split(', ');
-                } else {
-                    statuttext = [
-                        `・❓┆/help`,
-                        `・📨┆discord.gg/6K7K2wPtBG`,
-                        `・💻┆${totalGuilds} servers`,
-                        `・👤┆${totalMembers} members`,
-                        `・📌┆Shards: ${shardCount}`
-                    ];
-                }
-                const randomText = statuttext[Math.floor(Math.random() * statuttext.length)];
-                client.user.setPresence({ activities: [{ name: randomText, type: Discord.ActivityType.Watching }], status: 'online' });
-            })
-    }, 20000)
+let currentIndex = 0; 
+
+setInterval(async function () {
+    const promises = [
+        client.shard.fetchClientValues('guilds.cache.size'),
+    ];
+    return Promise.all(promises)
+        .then(results => {
+            const totalGuilds = results[0].reduce((acc, guildCount) => acc + guildCount, 0);
+            const totalMembers = client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0);
+            const shardCount = client.ws.totalShards || 1;
+            let statuttext;
+            if (process.env.DISCORD_STATUS) {
+                statuttext = process.env.DISCORD_STATUS.split(', ');
+            } else {
+                statuttext = [
+                    `・❓┆/help`,
+                    `・📨┆discord.gg/6K7K2wPtBG`,
+                    `・💻┆${totalGuilds} servers`,
+                    `・👤┆${totalMembers} members`,
+                    `・📌┆Shards: ${shardCount}`
+                ];
+            }
+
+            const currentText = statuttext[currentIndex]; 
+            currentIndex = (currentIndex + 1) % statuttext.length; 
+
+            client.user.setPresence({ activities: [{ name: currentText, type: Discord.ActivityType.Watching }], status: 'online' });
+        })
+}, 20000);
+
 
     client.player.init(client.user.id);
 }
