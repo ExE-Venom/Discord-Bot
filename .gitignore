@@ -2,3 +2,6 @@
 .env
 src/config/webhooks.json
 src/events/client/guildCreate.js
+*node_modules/*
+node_modules
+package-lock.json
